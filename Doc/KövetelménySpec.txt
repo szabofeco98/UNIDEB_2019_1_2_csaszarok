@@ -9,3 +9,16 @@ Követelményspecifikáció
 5. Igényelt üzleti feladatok
 6. Ellenőrzés
 
+Autó igénylés:
+----------------
+
+Telefonon vagy személyesen érdeklődik az ügyfél
+------------------------------------------------
+
+Kölcsön szerződés
+------------------
+
+Visszahozás
+
+
+
