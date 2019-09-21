@@ -34,12 +34,14 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
     animációk használatával, célunk az egyszerű, de nagyszerű program elkészítése, mely bárki által könnyen használható.
 <br>
 Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)  
+
 ## 3. Vágyálom rendszer
 Egy későbbi kiadásban tervezzük pontok szerzésének a lehetőségét.A pontokat annak fejében lehet majd megszerezni, 
 hogy hány szót találunk el. Terveink között szerepel, hogy ha sorozatbanminél több szót talál el a felhasználó, 
 egy bónusz szorzót is kap az aktuálisan megszerzett pontjaira.
 <br>
 Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo) és .....
+
 ## 4. Jelenlegi üzleti folyamatok
 
 
