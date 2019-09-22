@@ -25,8 +25,20 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
 
 
 ## 4. Jelenlegi üzleti folyamatok
-
-
+Jelenleg az angol nyelvet iskolásoknak ingyen oktatják, az elég tehetősek elmehetnek magántanárhoz 
+különórákra nyelvet tanulni. Egyetemen is eléhetőek angol nyelvű oktatások, ám nem sok mindeki számára 
+adatik meg, hogy használja is a nyelvet, a szókincsét. Az interneten eléhetőek különböző kurzusok pénzért és akár 
+ingyen is. Különböző ingyenes videókat is meg lehet oktatás szempontjából nézni. Az egyetemeken lehetőség van 
+cserediák programokra, melyekbe ha belefektetünk némi pénz, nem csak élményekkel gazdagodhatunk, 
+hanem jelentős nyelvtudással is gyarapodhatunk. Emellett létezik az Erasmus program is, melyet ha igénybe 
+veszünk, külföldön folytathatjuk egyetemi tanulmányainkat. A felnőtt, dolgozó embereket az őket 
+foglalkoztató cégek a legjobb esetben elküldhetik tanfolyamokra, melyeken felfrissíthetik nyelvtudásukat. Az idősebb 
+korosztály számára már a legnehezebb nyelvet tanulni, hiszen a memóriájuk már nem a régi és a 
+lehetőségeik is nagyban korlátozottak. Egy-két tanfolyam kifejezetten elérhető idősebbek számára is, 
+ám ezeken a tanfolyamokon általában a nyelvtannal foglalkoznak, és nem a szókincsüket gyarapítják, mint az általalunk készítendő 
+program.
+    
+Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)  
 ## 5. Igényelt üzleti feladatok
 
 
