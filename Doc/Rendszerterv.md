@@ -1,6 +1,28 @@
 # Szótár Projekt
 
 ## 1. A rendszer célja
+Készülő programunk egy magyar-angol szótáras felkérdezőprogram. Célunk 
+ezzel a projekttel, hogy hatékonyan fejlesszük a hétköznapi emberek 
+nyelvtudását, mind fiatalokét, mind idősekét is egyaránt.
+ 
+Alkalmazásunkat úgy lehet majd használni, hogy a program a feltöltött 
+szótárból kérdez szavakat és ezeket kell helyesen megválaszolni. 
+A felhasználóink új szavakat tudnak ezáltal tanulni, a régieket 
+feleleveníteni, ezáltal lesz egy aktív szókincsük. 
+
+A minimalista dizájn miatt átlátható, és könnyen felfedezhető a mi kis 
+tanulószótárunk idősek és fiatalok számára egyaránt, és nem utolsó 
+sorban nem vonja el a tanulástól a figyelmet.
+
+Nem kell órákat belefektetnünk az angol tanulásba, vonaton buszon, 
+út közben is használható, akár iskolai szünetekben is.
+
+Ingyenes, nem kell tízezreket költenünk magántanárra, nyelviskolára, ha 
+célunk csak a szavak felfrissítése, nem kell otthon a nehéz szótárakat 
+bújni, jegyzetelni, szókártyákkal vacakolni, itt játszva meg lehet 
+tanulni az új szavakat.
+
+Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)  
 
 ## 2. Projektterv
 #### Projekt:Szótár alkalmazás.
@@ -85,3 +107,4 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
 ## 11. Telepitésiterv
 
 ## 12. Karbantartásiterv
+
