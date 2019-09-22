@@ -133,6 +133,13 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
 
 ## 8. Adatbázisterv
 
+A szoftver Postgre sql adatbázist fog használni felhasználói azonositásra valamint szavak tárolására 
+az adatbázisban 2 tábla lesz a user valamint a word amelyek egy a többhöz kapcsolatban állnak egymással
+az az a word tábla minden elemét el kell látni egy külső kulcsal amely a user tábla elsődleges kulcsával
+egyezik meg 
+
+Author:[Szabó Ferenc](https://github.com/szabofeco98)
+
 ## 9. Implementációsterv
 
 ## 10. Tesztterv
