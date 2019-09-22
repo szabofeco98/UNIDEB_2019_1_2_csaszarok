@@ -13,7 +13,7 @@
        * Rendelkezésre álló idő : 14 nap.
    2. Munkaerő:
        * 1 fő Front End fejlesztő.
-       * 1 fő Tester .
+       * 1 fő Full Stack fejlesztő .
        * 2 fő Back End fejlesztő.
 2. **Mérdöldkövek:**
     1. Csapat megalakulás projekt kiválasztása:
@@ -26,7 +26,7 @@
               2. Vágyálom rendszer
               3. Jelenlegi üzleti folyamatok
               4. Igényelt Üzleti folyamatok
-             </pre>
+            </pre>
          </details>
          <details>
             <summary>Funkcionális specifikáció:</summary>
@@ -35,7 +35,7 @@
               2. Vágyálom rendszer
               3. Jelenlegi üzleti folyamatok
               4. Igényelt Üzleti folyamatok
-             </pre>
+            </pre>
          </details>
        <details>
             <summary>Rendszerterv</summary>
@@ -47,18 +47,21 @@
               5. Funkcionálisterv
               6. Fizikai környezet
               7. Architekturálisterv
-              8. Adatbázisterv
-              9. Implementációsterv
-              10. Tesztterv
-              11. Telepitésiterv
-              12. Karbantartásiterv
-             </pre>
+              8. Implementációsterv
+              9. Tesztterv
+              10. Telepitésiterv
+              11. Karbantartásiterv
+            </pre>
          </details>
-    3. 2019.09.30-ig Szótár alkalmazás lefejlesztése
-       * Design felelős: Szabó Alexandra.
-       * Teszt felelős: Hamza Sándor.
-       * Back End felelős : Szabó Ferenc,Petrik Dávid.
-
+    3. 2019.09.30-ig Szótár alkalmazás lefejlesztése.
+4. **Szerepkörök**
+   * Frond End fejlesztő: Hamza Sándor.:Ő felelős az alkalmazás kinézetéért továbbá hogy az alkalmazás könnyen 
+         használható legyen minden funkció magáért beszélően legyen megjelenítve.Munkája a fxml/css szerkesztését is tartalmazza
+   * Back End fejlesztők : Szabó Alexandra,Petrik Dávid.:Felelős az adatok megfelelő áramlásáért,adatbázis kapcsolat kialakításáért
+     és az üzleti logika implementálásáért.
+   * Full Stack fejlesztő:Szabó Ferenc .:Front End és Back End munkálatok végzése egyaránt.
+       
+   
 
 Author:[Szabó Ferenc](https://github.com/szabofeco98)
 
