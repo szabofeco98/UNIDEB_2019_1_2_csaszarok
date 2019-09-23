@@ -182,7 +182,10 @@ Author:[Hamza Sándor](https://github.com/sandorhamza)
 >>>>>>> 59be2d69fbfb769f2662055fb01dc8af05d5da15
 
 ## 9. Implementációsterv
-
+Minden fejlesztő önállóan végzi a rá kiszabott feladatokat. Ha ezekkel készen vannak, a build-elés következik,
+melyet szabó Ferenc vezetésével valósítanak meg .
+	
+Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo) 
 ## 10. Tesztterv
 | Vizsgálat módja/eszköze, részletes leírása |Elvárt eredmény  | Eredmény | Megfelelőség státusza (Megfelelő,Pótlás határideje) |
 |:------------------------------------------:|:---------------:|:--------:|:---------------------------------------------------:|
@@ -195,8 +198,23 @@ Author:[Hamza Sándor](https://github.com/sandorhamza)
 |Teszt befejződése                           | A teszt sikeresen befejeződik, majd a kiértékelés megjelenik| | |
 |Megnyitjuk a ranglistát	|A ranglista sikeresen megnyílik az aktuális adatokkal| | |
 
+
 Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo) 
+
+
 ## 11. Telepitésiterv
 
 ## 12. Karbantartásiterv
 
+A rendszergazda végzi at üzemeltetés. A rendszergazda a megrendelő munkatársa. 
+Az elvárások:
+
+
+* meghibásodás esetén az utolsó konzisztens állapot visszaállítása
+* a rendszer frissítése
+* az általános átvizsgálás során észlelt hibák javítása
+* bejelentések során érkezett hibák javítása
+* a munkatársak igényeinek folyamatos figyelése és felmérése.
+
+
+Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo) 
