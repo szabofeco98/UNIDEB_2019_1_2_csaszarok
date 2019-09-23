@@ -130,7 +130,25 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
 ## 6. Fizikai környezet
 
 ## 7. Architekturálisterv
+A rendszer 3 különböző rétegből fog állni. Az adatbázis réteg az első, erre épül egy logikai réteg, majd a 
+prezentációs réteg. A prezentációs rétegünk egy mobil alkalmazás. Az adatbázist és a prezentációs
+rétegnek az összekötést a logikai réteg fogja biztosítani.  
+Amikor az alkalmazásban változtatásokat végzünk a felhasználó beállításai mellett a változás határozza meg, 
+hogy az automatikusan frissül-e. Amennyiben nem, egy figyelmeztető üzenet jelenik meg, és a felhasználó 
+hozzájárulása szükséges a frissítés megkezdéséhez.  
+Meghatározott tervezési minták és alapelvek betartásával a rendszer könnyen 
+és következetesen bővíthető. A rendszer moduláris felépítése megkönnyíti, és nagy mértékben elősegíti a bővítését. 
 
+| Név | Kifejtés |
+|:---:|:--------:|
+| Regisztráció | A felület eléréséhez felhasználói fiók szükséges. Ehhez természetesen elengedhetetlen egy regisztrációs felület is. |
+| Bejelentkezés | A felület eléréséhez bejelentkezés szükséges. A felhasználó ezután tudja elérni a különböző funkciókat, illetve a szerver az ő fiókjához csatoltan tárol különböző adatokat. |
+| Kijelentkezés | Ha a kliens felhasználót szeretne cserélni akkor elengedhetetlen egy kijelentkező felület. Ezután a kliens visszatér a bejelentkező képernyőre. |
+| Általános beállítások | Mind a mobil, mind a webes felületen elérhetővé kell tennie egy beállítások felületet ahol a felhasználó egyedi preferanciák alapján képes lesz beállítani dolgokat (Pl.: Nyelv, Értesítések, Felhasználó adatainak módosítása) |
+| Teszt | Ha egy felhasználó kiválasztotta az általa feltöltött szavakat, lehetősége lesz olvasni az adott szótárban és tesztelheti, mennyire tudja az adott szavakat. |
+| Kiértékelt tesztek | Egy teszt kitöltése után a felhasználó láthatja az elért pontszámát, ezt tároljuk. Erre alapul majd a ranglista. |
+
+Author:[Petrik Dávid](https://github.com/PDavidson123)
 ## 8. Adatbázisterv
 Logikai adatmodell:
 
