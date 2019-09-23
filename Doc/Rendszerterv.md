@@ -139,9 +139,9 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
 A rendszer 3 különböző rétegből fog állni. Az adatbázis réteg az első, erre épül egy logikai réteg, majd a 
 prezentációs réteg. A prezentációs rétegünk egy mobil alkalmazás. Az adatbázist és a prezentációs
 rétegnek az összekötést a logikai réteg fogja biztosítani.  
-Amikor az alkalmazásban változtatásokat végzünk a felhasználó beállításai mellett a változás határozza meg, 
-hogy az automatikusan frissül-e. Amennyiben nem, egy figyelmeztető üzenet jelenik meg, és a felhasználó 
-hozzájárulása szükséges a frissítés megkezdéséhez.  
+Amikor az alkalmazásban változtatásokat, hibajavításokat végzünk a felhasználó beállításai mellett a változás 
+határozza meg, hogy az automatikusan frissül-e. Amennyiben nem, egy figyelmeztető üzenet jelenik meg, és a 
+felhasználó hozzájárulása szükséges a frissítés megkezdéséhez.  
 Meghatározott tervezési minták és alapelvek betartásával a rendszer könnyen 
 és következetesen bővíthető. A rendszer moduláris felépítése megkönnyíti, és nagy mértékben elősegíti a bővítését. 
 
