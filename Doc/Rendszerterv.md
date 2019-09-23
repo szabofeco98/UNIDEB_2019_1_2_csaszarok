@@ -89,6 +89,39 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
 
 
 ## 3. Üzleti folyamatok modellje
+   * **Megvalósítandó Üzleti folyamatok:**
+     * A szofver regisztrációs és bejelentkező felületet kell hogy nyújtson a felhasználók számára 
+      .Regisztráláskor meg kell adnia nevét email címét és egy általa választott jelszót ezeket az adatokat egy adatbázisban tároljuk
+       amelyekkel majd bejelentkezhet a felületre.
+     * A szótár felület lehetőséget kell biztosítson szavak hozzá adására kézzel vagy txt fájlból való beolvasással és szavak törlésére        is lehetőséget kell adjon .Funkciót kell biztosítson minden szó felkérdezésére vagy véletlenszerűen  x-darab szó felkérdezésére 
+       a szoftver  azonnal vissza jelez hogy eltaláltuk-e a szót vagy sem.
+   * **Üzleti Szereplők**
+     * Felhasználó:A regsztrációs felület kitöltése után felhasználói jogusultságot kap a szoftver használó
+      .A felhasználónak lehetősége van  a szavak adatbázisban való tárolására.Adatbázisban tárolt szavak bővítésére/törlésére tárolt            szavak megtekintésére valamint használhatók a felkérdezés funkciók.
+     * Vendég Felhasználó:Amennyiben nincs regisztrált felhasználónk is használható az alkalmazás azonban nem elérhetőek az adatbázishoz
+       kapcsolódó műveletek(szavak hoszú tűvú tárolása,törlés,hozzáadás).
+   * **Üzleti Entitások**
+     * Word: Kézzel bevihető vagy fájl beolvasással regisztrált fiók estén adatbázisban tárolja.
+            Az objektum váza:
+     
+       | Word |
+       |------|
+       |String(hunWord)|
+       |String(engWord|
+       |Number(userId)|
+             
+     * User: Regisztrálás során vihető fel az adatbázisba segítségével a felhasználók adatbázisban tudják tárolni szavaikat.
+             Bejelentkezni csak regisztrált userel lehetséges.Az objektum váza:
+             
+       |User|
+       |------|
+       |Number(ID)|
+       |String(userName)|
+       |String(passWord)|
+       |String(email)|
+   
+    
+Author:[Szabó Ferenc](https://github.com/szabofeco98)
 
 ## 4. Követelmények
 
@@ -99,6 +132,17 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
 ## 7. Architekturálisterv
 
 ## 8. Adatbázisterv
+Logikai adatmodell:
+
+A szoftver Postgre sql adatbázist fog használni felhasználói azonositásra valamint szavak tárolására 
+az adatbázisban 2 tábla lesz a user valamint a word amelyek egy a többhöz kapcsolatban állnak egymással
+az az a word tábla minden elemét el kell látni egy külső kulcsal amely a user tábla elsődleges kulcsával
+egyezik meg 
+<br>
+
+Az adatbázis JPA hybernate megoldásokat fog használni az adatbázis műveletekhez.
+
+Author:[Szabó Ferenc](https://github.com/szabofeco98)
 
 ## 9. Implementációsterv
 
