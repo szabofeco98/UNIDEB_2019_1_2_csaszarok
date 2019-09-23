@@ -103,7 +103,15 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
 ## 9. Implementációsterv
 
 ## 10. Tesztterv
-
+| Vizsgálat módja/eszköze, részletes leírása |Elvárt eredmény  | Eredmény | Megfelelőség státusza (Megfelelő,Pótlás határideje) |
+|:------------------------------------------:|:---------------:|:--------:|:---------------------------------------------------:|
+|Felhasználó regisztrálása                   |     A regisztráció sikeres legyen |          |                                                     |
+|A bejelentkezési adatok kitöltését követően a felhasználó bejelentkezik|  A bejelentkezés sikeres |          |                                                     |
+|A kijelentkezés gombra rányomva kijelentkezzen |	Sikeres Kijelentkezés| | |
+|Ellenőrizni az adatbázisokat hogy képesek-e az adott szavak felvételére, lekérdezésére |	Sikeres lekérdezés,adatfelvétel| | |
+|Kilistázzuk az nehezen tanult szavakat      | A szavak kilistázódnak | | |
+|Teszt elkezdése                             | A szavak lekérdezése elkezdődik | | |
+|Teszt befejződése                           | A teszt sikeresen befejeződik, majd a kiértékelés megjelenik| | |
 ## 11. Telepitésiterv
 
 ## 12. Karbantartásiterv
