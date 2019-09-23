@@ -54,6 +54,18 @@ Author: [Petrik Dávid](https://github.com/PDavidson123)
 
 
 ## 5. Igényelt üzleti feladatok
+Milyen folyamatokat kell megvalósítson a rendszer?
+A rendszert a felhasználók egy webhelyről tudják letölteni .jar formátumú fájlként. A rendszer lehetőséget kell, hogy
+biztosítson regisztrációra a felületre amelynek segítségével az adataikat adatbázisban fogjuk tudni tárolni.
+Tárolt adataik eléréséhez is lehetőséget kell biztosítani, bejelentkezés funkcióval.
+Azonban lehetőséget biztosítunk a regisztrálás nélküli felhasználáshoz is, viszont ebben az esetben nem tudjuk
+tárolni adataikat.
+A szótárban fel tudunk vinni szavakat, mind kézzel, mind fájllal való beolvasással. Ezeket bejelntkezett
+felhasználók esetén tárolunk, lehetőséget kínálunk a bővítésre és a törlés lehetőségére is.
+Továbbá, a tanulást elősegítve, lehetőség van a szavak véletlenszerű visszakérdezésére vagy akár az összes szó
+visszakérdezésére is, valamint a szavak megtekintésére.
+
+Author: [Hamza Sándor] (https://github.com/sandorhamza)
 
 
 
