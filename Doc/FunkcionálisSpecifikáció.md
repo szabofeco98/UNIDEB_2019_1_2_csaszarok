@@ -35,9 +35,18 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
     
 Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)  
 ## 3. Vágyálom rendszer
-Egy későbbi kiadásban tervezzük pontok szerzésének a lehetőségét.A pontokat annak fejében lehet majd megszerezni, 
-hogy hány szót találunk el. Terveink között szerepel, hogy ha sorozatbanminél több szót talál el a felhasználó, 
-egy bónusz szorzót is kap az aktuálisan megszerzett pontjaira.
+Egy későbbi kiadásban tervezzük pontok szerzésének a lehetőségét. A pontokat annak fejében lehet majd megszerezni, 
+hogy hány szót találunk el. Terveink között szerepel, hogy ha sorozatban minél több szót talál el a felhasználó, 
+egy bónusz szorzót is kap az aktuálisan megszerzett pontjaira. Ezek a pontok a későbbiekben megtekinthetőek 
+az alkalmazásban egy külön menüpontban, ranglistaként. Ezzel az a célunk, hogy versenyhelyzetet teremtsünk a 
+felhasználók között, így ösztönözve őket még több tanulásra, vagyis az app gyakoribb használatára.  
+Későbbiekben a szótárat több nyelven is lehet majd használni, a 2 szót megcserélhetővé tesszük, az alkamzazásunk 
+így fordítva is fel tudja kérdezni a szavakat a felhasználótól.  
+Jelenleg a program high-end-jét az a fejlesztés képviseli, amellyel lehetővé tesszük a felhasználónak a különböző 
+nyelvek ragjainak tanulását, amelyet a program képes lesz saját beépített tanuló algoritmusával 
+felismerni, majd különböző feladatok formájában felkérdezni a felhasználótól. 
+
+Author: [Petrik Dávid](https://github.com/PDavidson123)
 
 
 
