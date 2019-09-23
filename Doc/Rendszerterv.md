@@ -143,7 +143,7 @@ Amikor az alkalmazásban változtatásokat, hibajavításokat végzünk a felhas
 határozza meg, hogy az automatikusan frissül-e. Amennyiben nem, egy figyelmeztető üzenet jelenik meg, és a 
 felhasználó hozzájárulása szükséges a frissítés megkezdéséhez.  
 Meghatározott tervezési minták és alapelvek betartásával a rendszer könnyen 
-és következetesen bővíthető. A rendszer moduláris felépítése megkönnyíti, és nagy mértékben elősegíti a bővítését. 
+és következetesen bővíthető. A rendszer moduláris felépítése megkönnyíti, és nagy mértékben elősegíti a bővítését, fejlesztést. 
 
 | Név | Kifejtés |
 |:---:|:--------:|
