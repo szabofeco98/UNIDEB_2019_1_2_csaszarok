@@ -176,10 +176,8 @@ egyezik meg
 
 Az adatbázis JPA hybernate megoldásokat fog használni az adatbázis műveletekhez.
 
-<<<<<<< HEAD
-=======
 Author:[Hamza Sándor](https://github.com/sandorhamza)
->>>>>>> 59be2d69fbfb769f2662055fb01dc8af05d5da15
+
 
 ## 9. Implementációsterv
 Minden fejlesztő önállóan végzi a rá kiszabott feladatokat. Ha ezekkel készen vannak, a build-elés következik,
