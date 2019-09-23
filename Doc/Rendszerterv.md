@@ -131,12 +131,40 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
 
 ## 4. Követelmények
 
+|Megnevezés |
+|:---------:|
+|Regisztráció|
+|Bejelentkezés|
+|Kijelentkezés|
+|Általános beállítások	|
+|Teszt|
+
+Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)
+
 ## 5. Funkcionálisterv
 
 ## 6. Fizikai környezet
 
 ## 7. Architekturálisterv
+A rendszer 3 különböző rétegből fog állni. Az adatbázis réteg az első, erre épül egy logikai réteg, majd a 
+prezentációs réteg. A prezentációs rétegünk egy mobil alkalmazás. Az adatbázist és a prezentációs
+rétegnek az összekötést a logikai réteg fogja biztosítani.  
+Amikor az alkalmazásban változtatásokat, hibajavításokat végzünk a felhasználó beállításai mellett a változás 
+határozza meg, hogy az automatikusan frissül-e. Amennyiben nem, egy figyelmeztető üzenet jelenik meg, és a 
+felhasználó hozzájárulása szükséges a frissítés megkezdéséhez.  
+Meghatározott tervezési minták és alapelvek betartásával a rendszer könnyen 
+és következetesen bővíthető. A rendszer moduláris felépítése megkönnyíti, és nagy mértékben elősegíti a bővítését, fejlesztést. 
 
+| Név | Kifejtés |
+|:---:|:--------:|
+| Regisztráció | A felület eléréséhez felhasználói fiók szükséges. Ehhez természetesen elengedhetetlen egy regisztrációs felület is. |
+| Bejelentkezés | A felület eléréséhez bejelentkezés szükséges. A felhasználó ezután tudja elérni a különböző funkciókat, illetve a szerver az ő fiókjához csatoltan tárol különböző adatokat. |
+| Kijelentkezés | Ha a kliens felhasználót szeretne cserélni akkor elengedhetetlen egy kijelentkező felület. Ezután a kliens visszatér a bejelentkező képernyőre. |
+| Általános beállítások | Mind a mobil, mind a webes felületen elérhetővé kell tennie egy beállítások felületet ahol a felhasználó egyedi preferanciák alapján képes lesz beállítani dolgokat (Pl.: Nyelv, Értesítések, Felhasználó adatainak módosítása) |
+| Teszt | Ha egy felhasználó kiválasztotta az általa feltöltött szavakat, lehetősége lesz olvasni az adott szótárban és tesztelheti, mennyire tudja az adott szavakat. |
+| Kiértékelt tesztek | Egy teszt kitöltése után a felhasználó láthatja az elért pontszámát, ezt tároljuk. Erre alapul majd a ranglista. |
+
+Author:[Petrik Dávid](https://github.com/PDavidson123)
 ## 8. Adatbázisterv
 Logikai adatmodell:
 
@@ -150,8 +178,12 @@ Az adatbázis JPA hybernate megoldásokat fog használni az adatbázis művelete
 
 Author:[Hamza Sándor](https://github.com/sandorhamza)
 
-## 9. Implementációsterv
 
+## 9. Implementációsterv
+Minden fejlesztő önállóan végzi a rá kiszabott feladatokat. Ha ezekkel készen vannak, a build-elés következik,
+melyet szabó Ferenc vezetésével valósítanak meg .
+	
+Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo) 
 ## 10. Tesztterv
 | Vizsgálat módja/eszköze, részletes leírása |Elvárt eredmény  | Eredmény | Megfelelőség státusza (Megfelelő,Pótlás határideje) |
 |:------------------------------------------:|:---------------:|:--------:|:---------------------------------------------------:|
@@ -162,7 +194,25 @@ Author:[Hamza Sándor](https://github.com/sandorhamza)
 |Kilistázzuk az nehezen tanult szavakat      | A szavak kilistázódnak | | |
 |Teszt elkezdése                             | A szavak lekérdezése elkezdődik | | |
 |Teszt befejződése                           | A teszt sikeresen befejeződik, majd a kiértékelés megjelenik| | |
+|Megnyitjuk a ranglistát	|A ranglista sikeresen megnyílik az aktuális adatokkal| | |
+
+
+Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo) 
+
+
 ## 11. Telepitésiterv
 
 ## 12. Karbantartásiterv
 
+A rendszergazda végzi at üzemeltetés. A rendszergazda a megrendelő munkatársa. 
+Az elvárások:
+
+
+* meghibásodás esetén az utolsó konzisztens állapot visszaállítása
+* a rendszer frissítése
+* az általános átvizsgálás során észlelt hibák javítása
+* bejelentések során érkezett hibák javítása
+* a munkatársak igényeinek folyamatos figyelése és felmérése.
+
+
+Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo) 
