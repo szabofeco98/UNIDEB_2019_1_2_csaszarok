@@ -8,7 +8,10 @@ nyelvtudását, mind fiatalokét, mind idősekét is egyaránt.
 Alkalmazásunkat úgy lehet majd használni, hogy a program a feltöltött 
 szótárból kérdez szavakat és ezeket kell helyesen megválaszolni. 
 A felhasználóink új szavakat tudnak ezáltal tanulni, a régieket 
-feleleveníteni, ezáltal lesz egy aktív szókincsük. 
+feleleveníteni, ezáltal lesz egy aktív szókincsük.
+
+Saját szólista is összeállítható, amely használható saját vagy 
+pl. gyerekeink angol házifeladatának gyors megtanulásához és kikérdezéséhez.
 
 A minimalista dizájn miatt átlátható, és könnyen felfedezhető a mi kis 
 tanulószótárunk idősek és fiatalok számára egyaránt, és nem utolsó 
@@ -20,7 +23,10 @@ Nem kell órákat belefektetnünk az angol tanulásba, vonaton buszon,
 Ingyenes, nem kell tízezreket költenünk magántanárra, nyelviskolára, ha 
 célunk csak a szavak felfrissítése, nem kell otthon a nehéz szótárakat 
 bújni, jegyzetelni, szókártyákkal vacakolni, itt játszva meg lehet 
-tanulni az új szavakat.
+tanulni az új szavakat. 
+
+A program segítségével az angol nyelvtudással 
+nem rendelkező szülők is ki tudják kérdezni gyerekeiket! 
 
 Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)  
 
@@ -160,7 +166,7 @@ egyezik meg
 
 Az adatbázis JPA hybernate megoldásokat fog használni az adatbázis műveletekhez.
 
-Author:[Szabó Ferenc](https://github.com/szabofeco98)
+Author:[Hamza Sándor] (https://github.com/sandorhamza)
 
 ## 9. Implementációsterv
 
