@@ -132,11 +132,15 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
 ## 7. Architekturálisterv
 
 ## 8. Adatbázisterv
+Logikai adatmodell:
 
 A szoftver Postgre sql adatbázist fog használni felhasználói azonositásra valamint szavak tárolására 
 az adatbázisban 2 tábla lesz a user valamint a word amelyek egy a többhöz kapcsolatban állnak egymással
 az az a word tábla minden elemét el kell látni egy külső kulcsal amely a user tábla elsődleges kulcsával
 egyezik meg 
+<br>
+
+Az adatbázis JPA hybernate megoldásokat fog használni az adatbázis műveletekhez.
 
 Author:[Szabó Ferenc](https://github.com/szabofeco98)
 
