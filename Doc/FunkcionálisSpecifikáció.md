@@ -1,3 +1,10 @@
+
+## 0. Vezetői összefoglaló
+   A nyelv tanulása rendkivül fontos és elengedhetelen az élethez 
+   a program lehetőséget kell biztosit egy személyre szabott szótár létrehozására . Hogy a szavakat hoszabb távon is tárolni tudjuk szükség van adatbázisra igy az azonositás miatt regisztráció és bejelntkező funkcióra és természetesen kijelentkezőre.Fontos hogy egy könnyen kezelhető rendszert hozzunk létre amely megkönnyíti a nyelvtanulást a hagyomásos papír lap helyett melyet magunknál kell tartani egy alkalmazáson keresztül néhány katintással elérhető minden funkció és a program vissza jelez melyik szót is találtuk el ez által nyomon követhető a fejlődés. 
+
+Author:[Szabó Ferenc](https://github.com/szabofeco98)
+
 ## 1. Jelenlegi helyzet
   A program az angol szavak tanulására kínál interaktív megoldást, amely rugalmas
 személyenkénti igényeknek megfelelő tanulást tesz lehetővé.
