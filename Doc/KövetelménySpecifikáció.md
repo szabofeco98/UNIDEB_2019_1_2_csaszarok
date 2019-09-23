@@ -49,7 +49,16 @@ lehetőségeik is nagyban korlátozottak. Egy-két tanfolyam kifejezetten elérh
 program.
     
 Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)  
+
+
 ## 5. Igényelt üzleti feladatok
+A bejelentkezéskor a felhasználó egy bejelentkezési felületen a regisztrációkor megadott adatokkal tud belépni.
+Bejelentkezés után lehetőség nyílik új szavak feltöltésére, illetve a már meglévő szavak között keresni, illetve
+több féle módon visszakérdezni a szavakat. A program a lehető legszórakoztatóbb módon próbálja a tanulni vágyó
+felhasználót rávenni, hogy minél többet használja a programot és ha újabb tudásra szeretne szert tenni,
+lehetősége legyen rá.
+Az újabb szavak adatbázisát kézzel is be lehet vinni egyesével, illetve .txt formátumú fájlból
+egyszerre több szó hozzáadása is lehetséges.
 
-
+Author: [Hamza Sándor](https://github.com/sandorhamza)
 
