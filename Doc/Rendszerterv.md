@@ -131,6 +131,16 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
 
 ## 4. Követelmények
 
+|Megnevezés |
+|:---------:|
+|Regisztráció|
+|Bejelentkezés|
+|Kijelentkezés|
+|Általános beállítások	|
+|Teszt|
+
+Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)
+
 ## 5. Funkcionálisterv
 
 ## 6. Fizikai környezet
@@ -162,6 +172,9 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
 |Kilistázzuk az nehezen tanult szavakat      | A szavak kilistázódnak | | |
 |Teszt elkezdése                             | A szavak lekérdezése elkezdődik | | |
 |Teszt befejződése                           | A teszt sikeresen befejeződik, majd a kiértékelés megjelenik| | |
+|Megnyitjuk a ranglistát	|A ranglista sikeresen megnyílik az aktuális adatokkal| | |
+
+Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo) 
 ## 11. Telepitésiterv
 
 ## 12. Karbantartásiterv
