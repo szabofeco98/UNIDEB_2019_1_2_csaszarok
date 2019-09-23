@@ -204,7 +204,7 @@ Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)
 
 ## 12. Karbantartásiterv
 
-A rendszergazda végzi at üzemeltetés. A rendszergazda a megrendelő munkatársa. 
+A rendszergazda végzi az üzemeltetést. A rendszergazda a megrendelő munkatársa. 
 Az elvárások:
 
 
