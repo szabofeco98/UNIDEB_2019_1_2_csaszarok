@@ -166,7 +166,7 @@ egyezik meg
 
 Az adatbázis JPA hybernate megoldásokat fog használni az adatbázis műveletekhez.
 
-Author:[Hamza Sándor] (https://github.com/sandorhamza)
+Author:[Hamza Sándor](https://github.com/sandorhamza)
 
 ## 9. Implementációsterv
 
