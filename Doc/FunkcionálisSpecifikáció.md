@@ -65,7 +65,7 @@ felhasználók esetén tárolunk, lehetőséget kínálunk a bővítésre és a 
 Továbbá, a tanulást elősegítve, lehetőség van a szavak véletlenszerű visszakérdezésére vagy akár az összes szó
 visszakérdezésére is, valamint a szavak megtekintésére.
 
-Author: [Hamza Sándor] (https://github.com/sandorhamza)
+Author: [Hamza Sándor](https://github.com/sandorhamza)
 
 
 
