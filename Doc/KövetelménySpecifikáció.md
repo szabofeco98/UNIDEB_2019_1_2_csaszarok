@@ -22,7 +22,17 @@ amely ezeket az idegen szavakat felkérdezi ez által elő segítve a
 tanulást továbbá lehetőséget kinál.
 Author:[Szabó Ferenc](https://github.com/szabofeco98)
 ## 3. Vágyálom rendszer
+A pontszerzés lehetőségével szükségünk lesz az adatbázis bővítésére, emellett egy jól, egyenlően működő pontrendszer 
+kialakítására kell törekednünk. A menühöz hozzáadunk egy új menüpontot 'Ranglista' névvel, ahol a felhasználók láthajták 
+a többi felhasználóhoz viszonyítot tudásukat, aktivitásukat. Így ösztönözzük őket az alkalmazás gyakoribb használatára, 
+ami később akár a a szerverek bővítését is vonhatja maga után. Itt fontos megjegyezni, hogy az adatbázisunk saját szerveren 
+fog működni.  
+A szavak felcserélése funkció egy jól implementált adatbázis mellett nem jelent nagy kihívást, bár a több 
+nyelv bevezetéséhez bővíteni kell az adatbázisunkat.  
+A szerver bővítését vonja maga után a ragokat tanító funkció befejezése, mivel a beépíteni kívánt 
+tanuló algoritmus a szerverben jelentős erőforrásokat is elfoglalhat egy nagyobb adatbázis feltöltésénél. 
 
+Author: [Petrik Dávid](https://github.com/PDavidson123)
 
 ## 4. Jelenlegi üzleti folyamatok
 Jelenleg az angol nyelvet iskolásoknak ingyen oktatják, az elég tehetősek elmehetnek magántanárhoz 
