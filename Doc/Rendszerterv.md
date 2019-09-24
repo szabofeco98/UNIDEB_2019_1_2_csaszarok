@@ -99,13 +99,12 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
      * A szofver regisztrációs és bejelentkező felületet kell hogy nyújtson a felhasználók számára 
       .Regisztráláskor meg kell adnia nevét email címét és egy általa választott jelszót ezeket az adatokat egy adatbázisban tároljuk
        amelyekkel majd bejelentkezhet a felületre.
-     * A szótár felület lehetőséget kell biztosítson szavak hozzá adására kézzel vagy txt fájlból való beolvasással és szavak törlésére        is lehetőséget kell adjon .Funkciót kell biztosítson minden szó felkérdezésére vagy véletlenszerűen  x-darab szó felkérdezésére 
+     * A szótár felület lehetőséget kell biztosítson szavak hozzá adására  és szavak törlésére        is lehetőséget kell adjon .Funkciót kell biztosítson minden szó felkérdezésére vagy véletlenszerűen  x-darab szó felkérdezésére 
        a szoftver  azonnal vissza jelez hogy eltaláltuk-e a szót vagy sem.
    * **Üzleti Szereplők**
      * Felhasználó:A regsztrációs felület kitöltése után felhasználói jogusultságot kap a szoftver használó
-      .A felhasználónak lehetősége van  a szavak adatbázisban való tárolására.Adatbázisban tárolt szavak bővítésére/törlésére tárolt            szavak megtekintésére valamint használhatók a felkérdezés funkciók.
-     * Vendég Felhasználó:Amennyiben nincs regisztrált felhasználónk is használható az alkalmazás azonban nem elérhetőek az adatbázishoz
-       kapcsolódó műveletek(szavak hoszú tűvú tárolása,törlés,hozzáadás).
+      .A felhasználónak lehetősége van  a szavak adatbázisban való tárolására.Adatbázisban tárolt szavak bővítésére/törlésére tárolt  szavak megtekintésére valamint használhatók a felkérdezés funkciók.
+
    * **Üzleti Entitások**
      * Word: Kézzel bevihető vagy fájl beolvasással regisztrált fiók estén adatbázisban tárolja.
             Az objektum váza:
@@ -180,10 +179,27 @@ Author:[Hamza Sándor](https://github.com/sandorhamza)
 
 
 ## 9. Implementációsterv
-Minden fejlesztő önállóan végzi a rá kiszabott feladatokat. Ha ezekkel készen vannak, a build-elés következik,
-melyet szabó Ferenc vezetésével valósítanak meg .
-	
-Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo) 
+Perzisztencia osztályok:
+A perzisztencia osztályokból képezhetjük le az adatbázis elemeit 
+objektumként ehez a Hybernate megoldásait fogja használni a szoftver.Két darab entitás osztályra lesz szükségünk egy a szavak tárolására egy pedig a felhasználók tárolására ezek kapcsolatban is állnak egymással amelyet @oneToMany és @manyToOne annotációval jeleznünk kell a forditó számára.
+Az osztályok váza:
+<br>
+
+![ ](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/PerzisztenciaOszt%C3%A1lyok.JPG)
+
+Üzleti logika osztályai:Csapatunk az MVC architechturális minta melett döntött igy az üzleti logika osztályait a modell package fogja tartalmazni.Három osztályra lesz szükségünk,egy modellre amely a bejelentkezésért felel és hozzá fér a user táblához  a következő a regisztrációért felel és szintén hozzá fér a user táblához valamint a harmadik osztály amely a word táblához fér hozzá.Az osztályok váza:
+
+![ ](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/Modell.JPG)
+
+Kliens oldal osztályai:A kliens oldal osztályai tartalmazzák a nézeteket amelyet az ügyfelek látnak csapatunk az egyszerüségre és  intuitivitásra törekedett ide tartoznak a nézeteken kivül a hozzájuk kapcsolodó kontrollerek amelyek kapcsolatban állnak a nézettel és modell osztályokkal.
+Az osztáylok váza:
+
+![ ](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/View.JPG)
+
+![ ](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/Controller.JPG)
+
+Author:[Szabó Ferenc](https://github.com/szabofeco98),[Petrik Dávid](https://github.com/PDavidson123)
+
 ## 10. Tesztterv
 | Vizsgálat módja/eszköze, részletes leírása |Elvárt eredmény  | Eredmény | Megfelelőség státusza (Megfelelő,Pótlás határideje) |
 |:------------------------------------------:|:---------------:|:--------:|:---------------------------------------------------:|
