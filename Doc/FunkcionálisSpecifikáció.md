@@ -72,7 +72,15 @@ felhasználók esetén tárolunk, lehetőséget kínálunk a bővítésre és a 
 Továbbá, a tanulást elősegítve, lehetőség van a szavak véletlenszerű visszakérdezésére vagy akár az összes szó
 visszakérdezésére is, valamint a szavak megtekintésére.
 
-Author: [Hamza Sándor](https://github.com/sandorhamza)
+Regisztráció folyamata:
+
+![ ](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/Regisztr%C3%A1ci%C3%B3.jpg)
+
+Bejelentkezés folyamata:
+
+![ ](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/login.jpg)
+
+Author:[Szabó Ferenc ](https://github.com/szabofeco98) ,[Hamza Sándor](https://github.com/sandorhamza)
 
 
 
