@@ -175,7 +175,11 @@ egyezik meg
 
 Az adatbázis JPA hybernate megoldásokat fog használni az adatbázis műveletekhez.
 
-Author:[Hamza Sándor](https://github.com/sandorhamza)
+Adatbázis séma:
+
+![ ](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/adatb%C3%A1ziss%C3%A9ma.JPG)
+
+Author:[Szabó Ferenc](https://github.com/szabofeco98),[Hamza Sándor](https://github.com/sandorhamza)
 
 
 ## 9. Implementációsterv
