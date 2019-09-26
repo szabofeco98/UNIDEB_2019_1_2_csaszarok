@@ -1,2 +1,4 @@
-./.idea/
-./App.iml
+.idea/
+target/
+App.iml
+dictionary.iml
