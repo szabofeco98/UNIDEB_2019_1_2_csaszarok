@@ -1,3 +1,10 @@
-software\app\Runnable.class
-software\app\Main.class
 software\controller\Controller.class
+software\Entity\Player$PlayerBuilder.class
+software\Entity\Player.class
+software\Entity\GenericDao.class
+software\Entity\Words.class
+software\app\Main.class
+software\app\Runnable.class
+software\Entity\Words$WordsBuilder.class
+software\Entity\PlayerDao.class
+software\Entity\WordsDao.class
