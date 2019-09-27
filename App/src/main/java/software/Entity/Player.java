@@ -2,6 +2,7 @@ package software.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
 public class Player {
     @Id
     @GeneratedValue
-    private int Id;
+    private long Id;
 
 
     @Column(unique = true)
@@ -23,7 +24,9 @@ public class Player {
 
     private String password;
 
-    @OneToMany(mappedBy = "player")
+   // @OneToMany(mappedBy = "player")
+    @OneToMany(cascade={CascadeType.PERSIST, CascadeType.MERGE},mappedBy = "player")
+    @Cascade(value = org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private List<Word> Words;
 
     public Player(){};
@@ -45,7 +48,7 @@ public class Player {
     }
 
 
-    public void setId(int id) {
+    public void setId(long id) {
         Id = id;
     }
 
@@ -61,7 +64,7 @@ public class Player {
         this.password = password;
     }
 
-    public int getId() {
+    public long getId() {
         return Id;
     }
 

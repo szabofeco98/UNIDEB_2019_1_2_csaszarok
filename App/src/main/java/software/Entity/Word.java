@@ -9,7 +9,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -17,7 +16,7 @@ public class Word {
 
     @Id
     @GeneratedValue
-    private int id;
+    private long id;
 
     private String hunWord;
 
@@ -29,7 +28,7 @@ public class Word {
 
     ;
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -45,7 +44,7 @@ public class Word {
         this.player = player;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
