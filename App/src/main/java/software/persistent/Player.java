@@ -1,4 +1,4 @@
-package software.Entity;
+package software.persistent;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -23,8 +23,8 @@ public class Main extends Application {
         primaryStage.show();
 
         System.out.println("lefut");
-        RegistrationController registrationController;
-
+        RegistrationController registrationController = new RegistrationController();
+        registrationController.registration();
 
 
 

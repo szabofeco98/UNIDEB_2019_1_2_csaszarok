@@ -1,4 +1,4 @@
-package software.Entity;
+package software.persistent;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -31,10 +31,10 @@ public class Database {
          emf.close();
      }
 
-     public void addPlayer(Player player) {
+     public <T> void persist(T entity) {
          if(!em.getTransaction().isActive())
          em.getTransaction().begin();
-         em.persist(player);
+         em.persist(entity);
          try {
              em.getTransaction().commit();
          } catch (Exception e) {
@@ -42,32 +42,17 @@ public class Database {
          }
      }
 
-     public void addWord(Word word){
+
+     public <T> void remove(T entity){
          if(!em.getTransaction().isActive())
          em.getTransaction().begin();
-         em.persist(word);
-         em.getTransaction().commit();
-
-     }
-
-     public void removePlayer(Player player){
-         if(!em.getTransaction().isActive())
-         em.getTransaction().begin();
-         em.remove(player);
-         em.getTransaction().commit();
-     }
-
-     public void removeWord(Word word){
-         if(!em.getTransaction().isActive())
-         em.getTransaction().begin();
-         em.remove(word);
+         em.remove(entity);
          em.getTransaction().commit();
      }
 
      public List<Player> getAllPlayer(){
          if(!em.getTransaction().isActive())
          em.getTransaction().begin();
-         Query query=em.createNativeQuery("select * from player",Player.class);
-         return  query.getResultList();
+         return em.createNativeQuery("select * from player",Player.class).getResultList();
      }
 }

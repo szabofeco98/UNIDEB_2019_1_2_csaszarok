@@ -1,4 +1,4 @@
-package software.Entity;
+package software.persistent;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
