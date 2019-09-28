@@ -9,7 +9,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software.controller.RegistrationController">
   <children>
-    <Pane fx:id="registration" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: WHITE;">
+    <Pane fx:id="reg" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: WHITE;">
       <children>
         <Button id="test" fx:id="registration" layoutX="62.0" layoutY="210.0" mnemonicParsing="false" onAction="#registration" prefHeight="30.9609375" prefWidth="89.0" text="Regisztráció" />
         <Label layoutX="73.0" layoutY="88.0" minHeight="17.951171875" prefHeight="17.951171875" prefWidth="110.0" text="Felhasználónév">
