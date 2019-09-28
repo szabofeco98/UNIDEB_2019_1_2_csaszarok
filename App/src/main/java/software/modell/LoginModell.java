@@ -13,11 +13,9 @@ public class LoginModell {
 
     private static Logger logger = LoggerFactory.getLogger(LoginModell.class);
 
-
     private Database database = new Database();
 
-
-    List<Player> players=database.getAllPlayer();
+    List<Player> players = database.getAllPlayer();
 
     String passwd;
 
@@ -32,7 +30,7 @@ public class LoginModell {
     }
 
     public boolean login(String examinedUsername, String examinedPassword) {
-        if (examinedUsername.length()>3 && examinedPassword.length() > 3) {
+        if (examinedUsername.length() > 3 && examinedPassword.length() > 3) {
             if (userExist(examinedUsername)) {
                 logger.info("exist");
                 for (Player player : players) {
@@ -41,7 +39,7 @@ public class LoginModell {
                     if (player.getUsername().equals(examinedUsername)) {
                         String hashedPassword;
                         passwd = player.getPassword(); //hashelt
-                        hashedPassword=DigestUtils.sha256Hex(examinedPassword);
+                        hashedPassword = DigestUtils.sha256Hex(examinedPassword);
                         if (passwd.equals(hashedPassword)) {
                             return true;
                         }
@@ -51,9 +49,4 @@ public class LoginModell {
         }
         return false;
     }
-
-
-
 }
-
-
