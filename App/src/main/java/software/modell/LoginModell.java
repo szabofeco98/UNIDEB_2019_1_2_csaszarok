@@ -13,7 +13,7 @@ public class LoginModell {
 
     private static Logger logger = LoggerFactory.getLogger(LoginModell.class);
 
-    private Database database = new Database();
+    private  Database database = Database.database;
 
     List<Player> players = database.getAllPlayer();
 
@@ -31,7 +31,9 @@ public class LoginModell {
 
     public boolean login(String examinedUsername, String examinedPassword) {
         if (examinedUsername.length() > 3 && examinedPassword.length() > 3) {
-            if (userExist(examinedUsername)) {
+            System.out.println(examinedUsername);
+            //System.out.println(userExist(examinedUsername));
+            if (true) {
                 logger.info("exist");
                 for (Player player : players) {
                     logger.info("tábla username:" + player.getUsername() + "-megadott username:" + examinedUsername);

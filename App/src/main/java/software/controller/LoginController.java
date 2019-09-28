@@ -61,8 +61,8 @@ public class LoginController implements Initializable {
         logger.info(uname);
         String passwd=password.getText();
         logger.info(DigestUtils.sha256Hex(passwd));
-        //if(modell.login(uname, passwd))
-            logger.info("sikeres bejelentkezes");
+        if(modell.login(uname, passwd))
+            System.out.println("sikeres bejelentkezes");
 
     }
 }
