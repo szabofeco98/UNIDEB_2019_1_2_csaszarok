@@ -1,9 +1,13 @@
 package software.controller;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import lombok.Data;
 import software.app.Main;
 import software.persistent.Database;
@@ -18,17 +22,47 @@ import java.util.ResourceBundle;
 
 public class RegistrationController implements Initializable {
     RegistrationModell modell= new RegistrationModell();
+    @FXML
+    private TextField email;
 
-  //  Database database=new Database(); //Test
+    @FXML
+    private Label error;
+
+    @FXML
+    private PasswordField password;
+
+
+    @FXML
+    private PasswordField repassword;
+
+    @FXML
+    private Label sucess;
+
+    @FXML
+    private TextField username;
+
     public void registration(){
-        /*
-        Player player=Player.builder().email("test").password("test").username("test").build();
-        Player player1=Player.builder().email("elek").password("elek").username("elek").build();
-        Word word=Word.builder().engWord("what").hunWord("mi").player(player1).build();
-        Player player2=Player.builder().email("uj").password("uj").username("uj").build();
-        System.out.println(modell.updatePlayer(player));
-        if(modell.updatePlayer(player1).equals("sucess")) database.persist(word);
-        System.out.println(modell.updatePlayer(player2));*/
+        String uname=username.getText();
+        String emai=this.email.getText();
+        String password=this.password.getText();
+        String repassword=this.repassword.getText();
+        Player newUser=Player.builder().email(emai).password(password).username(uname).build();
+        String answer=modell.updatePlayer(newUser);
+        switch (answer){
+            case "sucess":{
+                error.setText("");
+                sucess.setText("Sikeres");
+                break;
+            }
+            case "emailExist":{
+                sucess.setText("");
+                error.setText("Az email már létezik");
+            }
+            case "userExist":{
+                sucess.setText("");
+                error.setText("A felhasználónév létezik");
+            }
+        }
     }
 
     @Override
@@ -36,7 +70,7 @@ public class RegistrationController implements Initializable {
 
     }
 
-    public void test(ActionEvent test) throws IOException {
+    public void goLogin(ActionEvent actionEvent) {
         Main.setScene("login.fxml");
     }
 }

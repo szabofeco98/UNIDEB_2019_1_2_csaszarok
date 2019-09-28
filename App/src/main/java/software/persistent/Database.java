@@ -82,6 +82,13 @@ public class Database {
          return em.createNativeQuery("select * from player",Player.class).getResultList();
     }
 
+    /**
+     * Megadja az adott felhasználó adatbázisban lévő
+     * a felhasználóhoz tartozó szavakat.
+     *
+     * @param player adatbázisban lévő felhasználó
+     * @return felhasználóhoz tartozó szavak listája.
+     */
      public List<Word> getAllWordByPlayer(Player player){
          if(!em.getTransaction().isActive())
              em.getTransaction().begin();
@@ -90,6 +97,13 @@ public class Database {
          return sql.getResultList();
      }
 
+    /**
+     * Vissza adja azt a felhasználót amelynek az idja az
+     * adatbázisban megegyezik a kapott id-val.
+     *
+     * @param id Felhasználó azonositója
+     * @return Az adatbázisban lévő megegyező id-val rendelkező Player.
+     */
      public Player getPlayer(long id){
          if(!em.getTransaction().isActive())
              em.getTransaction().begin();

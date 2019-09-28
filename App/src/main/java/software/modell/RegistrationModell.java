@@ -14,7 +14,7 @@ public class RegistrationModell {
     /**
      * A player tábla elemeit tartalmazó lista
      */
-    List<Player> players=database.getAllPlayer();
+    List<Player> players;
 
     /**
      * Vizsgálja hogy létezik-e a felhasználó által
@@ -60,6 +60,7 @@ public class RegistrationModell {
      * már létezik a felhasználónév és "emailExist" ha már lézik felhasználó ezzel az email címmel.
      */
     public String updatePlayer(Player player){
+        players=database.getAllPlayer();
         if(userExist(player.getUsername())){
             System.out.println(true);
             return "userExist";
