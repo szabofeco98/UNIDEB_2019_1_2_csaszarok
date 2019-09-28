@@ -34,6 +34,11 @@
             <email>szaboalexandra18@gmail.com</email>
             <url>https://github.com/Wrigozo</url>
         </developer>
+        <developer>
+            <name>Petrik Dávid</name>
+            <email>david.siraly01@gmail.com</email>
+            <url>https://github.com/PDavidson123</url>
+        </developer>
     </developers>
 
     <dependencies>

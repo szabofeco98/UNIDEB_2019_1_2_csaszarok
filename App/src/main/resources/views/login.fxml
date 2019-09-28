@@ -13,7 +13,7 @@
       <TextField fx:id="password" layoutX="200.0" layoutY="180.0" />
       <Label layoutX="76.0" layoutY="135.0" prefHeight="26.0" prefWidth="116.0" text="Felhasználónév:" textAlignment="RIGHT" />
       <Label layoutX="141.0" layoutY="180.0" prefHeight="26.0" prefWidth="47.0" text="Jelszó:" textAlignment="RIGHT" />
-      <Button fx:id="signup" layoutX="146.0" layoutY="290.0" mnemonicParsing="false" onAction="#test" prefHeight="26.0" prefWidth="109.0" text="Regisztráció" />
+      <Button fx:id="signup" layoutX="146.0" layoutY="290.0" mnemonicParsing="false" onAction="#goRegistration" prefHeight="26.0" prefWidth="109.0" text="Regisztráció" />
       <Label layoutX="97.0" layoutY="62.0" prefHeight="35.0" prefWidth="208.0" text="Bejelentkezés" textAlignment="RIGHT">
          <font>
             <Font size="29.0" />
