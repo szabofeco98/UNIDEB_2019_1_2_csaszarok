@@ -90,7 +90,7 @@ public class RegistrationModell {
         player.setPassword(DigestUtils.sha256Hex(player.getPassword()));
         database.persist(player);
         return "sucess";
-    }
+    } 
 
     public boolean passwordIsValid(String password,String repassword){
         return password.equals(repassword) && password.length()>3;
