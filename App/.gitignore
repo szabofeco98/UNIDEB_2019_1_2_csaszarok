@@ -1,4 +1,9 @@
 .idea/
 target/
-App.iml
-dictionary.iml
+nb-configuration.xml
+nbactions.xml
+*.iml
+classes/
+*.sql
+dependency-reduced-pom.xml
+output/
