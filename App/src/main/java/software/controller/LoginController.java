@@ -6,10 +6,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.app.Main;
-
+import software.modell.LoginModell;
 
 
 import java.net.URL;
@@ -17,6 +18,7 @@ import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
 
+    LoginModell modell=new LoginModell();
 
     private static Logger logger = LoggerFactory.getLogger(LoginController.class);
     @FXML
@@ -29,7 +31,7 @@ public class LoginController implements Initializable {
     private TextField password;
 
     @FXML
-    private Button sigin;
+    private Button signin;
 
     @FXML
     private Button signup;
@@ -53,6 +55,14 @@ public class LoginController implements Initializable {
 
 
     public void test(ActionEvent actionEvent) {
-        System.out.println("átléptünk");
+
+        String uname=username.getText();
+        System.out.println(uname);
+        logger.info(uname);
+        String passwd=password.getText();
+        logger.info(DigestUtils.sha256Hex(passwd));
+        //if(modell.login(uname, passwd))
+            logger.info("sikeres bejelentkezes");
+
     }
 }
