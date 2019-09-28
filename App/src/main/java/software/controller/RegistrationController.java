@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import software.app.Main;
@@ -24,6 +25,7 @@ import java.util.ResourceBundle;
 
 public class RegistrationController implements Initializable {
     RegistrationModell modell= new RegistrationModell();
+
     @FXML
     private TextField email;
 
@@ -42,6 +44,7 @@ public class RegistrationController implements Initializable {
 
     @FXML
     private TextField username;
+
 
     public void registration(){
         String uname=username.getText();
@@ -99,5 +102,7 @@ public class RegistrationController implements Initializable {
     public void goLogin(ActionEvent actionEvent) {
 
         Main.setScene("login.fxml");
+
     }
+
 }
