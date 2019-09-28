@@ -1,11 +1,13 @@
 package software.app;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.apache.commons.codec.digest.DigestUtils;
 import software.persistent.Database;
 import software.persistent.Player;
 import software.persistent.Word;

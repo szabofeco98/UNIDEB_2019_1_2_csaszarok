@@ -1,5 +1,6 @@
 package software.modell;
 
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.validator.routines.EmailValidator;
 import software.persistent.Database;
 import software.persistent.Player;
@@ -26,8 +27,10 @@ public class RegistrationModell {
      */
     public boolean userExist(String username) {
         boolean exist=false;
+        System.out.println(players.size());
         for (Player player : players) {
             System.out.println("tábla username:"+player.getUsername()+"-megadott username:"+username);
+            if(player.getUsername()!=null)
             if(player.getUsername().equals(username)) exist=true;
         }
         return exist;
@@ -44,6 +47,7 @@ public class RegistrationModell {
         boolean exist=false;
         for (Player player : players) {
             System.out.println("táble email:"+player.getEmail()+"-medadott email"+email);
+            if(player.getEmail()!=null)
             if(player.getEmail().equals(email)){
                 exist=true;
             }
@@ -62,14 +66,7 @@ public class RegistrationModell {
      */
     public String updatePlayer(Player player,String repassword){
         players=database.getAllPlayer();
-        if(userExist(player.getUsername())){
-            System.out.println(true);
-            return "userExist";
-        }
-        if(emaiExist(player.getEmail())){
-            System.out.println(true);
-            return "emailExist";
-        }
+
 
         if (!userIsValid(player.getUsername())){
             return "userInvalid";
@@ -82,7 +79,15 @@ public class RegistrationModell {
         if(!passwordIsValid(player.getPassword(),repassword)){
             return "passwordInvalid";
         }
-
+        if(userExist(player.getUsername())){
+            System.out.println(true);
+            return "userExist";
+        }
+        if(emaiExist(player.getEmail())){
+            System.out.println(true);
+            return "emailExist";
+        }
+        player.setPassword(DigestUtils.sha256Hex(player.getPassword()));
         database.persist(player);
         return "sucess";
     }
