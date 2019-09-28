@@ -6,11 +6,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
-import org.hibernate.annotations.common.util.impl.LoggerFactory;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import software.app.Main;
-//import org.slf4j.LoggerFactory;
+
 
 
 import java.net.URL;
@@ -18,7 +17,8 @@ import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
 
-    //private static Logger logger = LoggerFactory.getLogger(LoginController.class);
+
+    private static Logger logger = LoggerFactory.getLogger(LoginController.class);
     @FXML
     public AnchorPane login;
 
@@ -43,7 +43,7 @@ public class LoginController implements Initializable {
     private void initialize() {
         // TODO
         login.setVisible(true);
-        //logger.info("The game has been initialized successfully!");
+        logger.info("Our application has been initialized successfully!");
     }
     public void goRegistration (ActionEvent actionEvent) {
         Main.setScene("registration.fxml");
