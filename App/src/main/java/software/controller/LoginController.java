@@ -7,6 +7,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import org.hibernate.annotations.common.util.impl.LoggerFactory;
+import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 
 
 import java.net.URL;
@@ -14,7 +16,7 @@ import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
 
-
+    //private static Logger logger = LoggerFactory.getLogger(LoginController.class);
     @FXML
     private AnchorPane login;
 
