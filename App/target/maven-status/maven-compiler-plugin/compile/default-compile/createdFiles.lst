@@ -1,7 +1,7 @@
 software\modell\RegistrationModell.class
-software\controller\Controller.class
 software\persistent\Word.class
 software\controller\RegistrationController.class
+software\controller\LoginController.class
 software\persistent\Player$PlayerBuilder.class
 software\persistent\Database.class
 software\app\Main.class

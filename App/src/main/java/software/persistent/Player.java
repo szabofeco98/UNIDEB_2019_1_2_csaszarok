@@ -24,7 +24,6 @@ public class Player {
 
     private String password;
 
-   // @OneToMany(mappedBy = "player")
     @OneToMany(cascade={CascadeType.PERSIST, CascadeType.MERGE},mappedBy = "player")
     @Cascade(value = org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private List<Word> Words;
