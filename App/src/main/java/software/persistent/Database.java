@@ -14,6 +14,8 @@ public class Database {
 
      static EntityManagerFactory emf=null ;
 
+     public static final Database database=new Database();
+
      public Database(){
              openEntityManager();
      }
@@ -111,5 +113,6 @@ public class Database {
          sql.setParameter(1,id);
          return (Player) sql.getResultList().get(0);
      }
+
 
 }

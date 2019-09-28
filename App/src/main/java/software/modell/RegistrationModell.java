@@ -11,7 +11,7 @@ public class RegistrationModell {
     /**
      * Adatbázis kapcsolathoz és műveletekhez szükséges Objektum
      */
-    private Database database=new Database();
+    private Database database=Database.database;
 
     /**
      * A player tábla elemeit tartalmazó lista

@@ -47,6 +47,7 @@ public class RegistrationController implements Initializable {
 
 
     public void registration(){
+
         String uname=username.getText();
         String emai=this.email.getText();
         String password=this.password.getText();
