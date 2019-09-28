@@ -1,5 +1,6 @@
 package software.modell;
 
+import org.apache.commons.validator.routines.EmailValidator;
 import software.persistent.Database;
 import software.persistent.Player;
 
@@ -59,7 +60,7 @@ public class RegistrationModell {
      * @return "sucess" amenyiben sikeresen felkerült az adatbázisba "userExist" amennyiben
      * már létezik a felhasználónév és "emailExist" ha már lézik felhasználó ezzel az email címmel.
      */
-    public String updatePlayer(Player player){
+    public String updatePlayer(Player player,String repassword){
         players=database.getAllPlayer();
         if(userExist(player.getUsername())){
             System.out.println(true);
@@ -70,8 +71,31 @@ public class RegistrationModell {
             return "emailExist";
         }
 
+        if (!userIsValid(player.getUsername())){
+            return "userInvalid";
+        }
+
+        if(!emailIsValid(player.getEmail())){
+            return "emailInvalid";
+        }
+
+        if(!passwordIsValid(player.getPassword(),repassword)){
+            return "passwordInvalid";
+        }
+
         database.persist(player);
         return "sucess";
+    }
 
+    public boolean passwordIsValid(String password,String repassword){
+        return password.equals(repassword) && password.length()>3;
+    }
+
+    public boolean userIsValid(String username){
+        return username.length()>3;
+    }
+
+    public boolean emailIsValid(String email){
+       return EmailValidator.getInstance().isValid(email);
     }
 }

@@ -9,17 +9,17 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.WordsPage">
    <children>
-      <Button id="addButton" layoutX="61.0" layoutY="120.0" mnemonicParsing="false" text="Szó hozzáadása" />
-      <Button id="deleteWord" layoutX="74.0" layoutY="185.0" mnemonicParsing="false" text="Szó törlése" />
-      <Button id="goBackButton" layoutX="161.0" layoutY="300.0" mnemonicParsing="false" text="Vissza" />
-      <TableView id="wordslist" layoutX="359.0" layoutY="3.0" prefHeight="388.0" prefWidth="228.0">
+      <Button id="addButton" fx:id="addWord" layoutX="61.0" layoutY="120.0" mnemonicParsing="false" onMouseClicked="#setAddWordClick" text="Szó hozzáadása" />
+      <Button id="deleteWord" fx:id="deleteWord" layoutX="74.0" layoutY="185.0" mnemonicParsing="false" onMouseClicked="#setDeleteWordClick" text="Szó törlése" />
+      <Button id="goBackButton" fx:id="goBackButton" layoutX="161.0" layoutY="300.0" mnemonicParsing="false" onAction="#setGoBackButtonClick" text="Vissza" />
+      <TableView id="wordslist" fx:id="wordslist" layoutX="359.0" layoutY="3.0" prefHeight="388.0" prefWidth="228.0">
         <columns>
           <TableColumn id="hunwords" prefWidth="116.0" text="Magyar" />
           <TableColumn prefWidth="111.0" text="Angol" />
         </columns>
       </TableView>
-      <TextField id="hunword" layoutX="186.0" layoutY="120.0" />
-      <TextField id="engword" layoutX="186.0" layoutY="185.0" />
+      <TextField id="hunword" fx:id="hunword" layoutX="186.0" layoutY="120.0" />
+      <TextField id="engword" fx:id="endword" layoutX="186.0" layoutY="185.0" />
       <Label layoutX="229.0" layoutY="96.0" text="Magyar szó:" />
       <Label layoutX="233.0" layoutY="160.0" text="Angol szó:" />
    </children>
