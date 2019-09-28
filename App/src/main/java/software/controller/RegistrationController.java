@@ -1,5 +1,6 @@
 package software.controller;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -9,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 import software.app.Main;
 import software.persistent.Database;
 import software.persistent.Player;
@@ -47,7 +49,7 @@ public class RegistrationController implements Initializable {
         String password=this.password.getText();
         String repassword=this.repassword.getText();
         Player newUser=Player.builder().email(emai).password(password).username(uname).build();
-        String answer=modell.updatePlayer(newUser);
+        String answer=modell.updatePlayer(newUser,repassword);
         switch (answer){
             case "sucess":{
                 error.setText("");
@@ -57,12 +59,36 @@ public class RegistrationController implements Initializable {
             case "emailExist":{
                 sucess.setText("");
                 error.setText("Az email már létezik");
+                break;
             }
             case "userExist":{
                 sucess.setText("");
                 error.setText("A felhasználónév létezik");
+                break;
+            }
+            case "userInvalid":{
+                sucess.setText("");
+                error.setText("Túl rövid felhasználónév");
+                break;
+            }
+            case "emailInvalid":{
+                sucess.setText("");
+                error.setText("Nem megfelelő Email cím");
+                break;
+            }
+
+            case "passwordInvalid":{
+                sucess.setText("");
+                error.setText("Nem jó jelszó");
+                break;
+            }
+            default:{
+                sucess.setText("");
+                error.setText("Váratlan hiba");
+                break;
             }
         }
+
     }
 
     @Override
@@ -71,6 +97,7 @@ public class RegistrationController implements Initializable {
     }
 
     public void goLogin(ActionEvent actionEvent) {
+
         Main.setScene("login.fxml");
     }
 }
