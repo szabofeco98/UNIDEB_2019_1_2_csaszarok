@@ -70,7 +70,11 @@ public class Database {
      public <T> void remove(T entity){
          if(!em.getTransaction().isActive())
          em.getTransaction().begin();
-         em.remove(entity);
+         try {
+             em.remove(entity);
+         } catch (Exception e) {
+                 System.err.println("baj van");
+         }
          em.getTransaction().commit();
      }
 
@@ -122,5 +126,12 @@ public class Database {
          return (Player) sql.getResultList().get(0);
      }
 
+     public Word getWordById(long id){
+         if(!em.getTransaction().isActive())
+             em.getTransaction().begin();
+         Query sql= em.createNativeQuery("select * from WORD where id = ?",Word.class);
+         sql.setParameter(1,id);
+         return (Word) sql.getResultList().get(0);
+     }
 
 }

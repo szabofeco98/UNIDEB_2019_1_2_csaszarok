@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.apache.commons.codec.digest.DigestUtils;
+import software.modell.DictionaryModell;
 import software.persistent.Database;
 import software.persistent.Player;
 import software.persistent.Word;
