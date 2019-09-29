@@ -45,6 +45,18 @@ public class Main extends Application {
         stage.show();
     }
 
+    public static void setScene(String scene,int width,int height){
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(Main.class.getClassLoader().getResource("views/"+scene)));
+        } catch (IOException e){
+            System.out.println(e);
+        }
+        stage.setTitle("Dictionary");
+        stage.setScene(new Scene(root, width, height));
+        stage.setResizable(false);
+        stage.show();
+    }
+
     public static void main(String[] args) {
         launch(args);
     }

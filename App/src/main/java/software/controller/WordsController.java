@@ -1,53 +1,40 @@
 package software.controller;
-
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;import javafx.fxml.FXML;
+
 
 public class WordsController {
 
-    @FXML
-    private AnchorPane WordsPage;
 
     @FXML
-    private Button addWord;
-
-    @FXML
-    private Button deleteWord;
-
-    @FXML
-    private Button goBackButton;
-
-    @FXML
-    private TableView wordslist;
+    private TextField endword;
 
     @FXML
     private TextField hunword;
 
     @FXML
-    private TextField engword;
+    private TableView<?> wordslist;
+
 
     @FXML
-    private void initialize() {
-        WordsPage.setVisible(true);
+    void setAddWordClick(ActionEvent event) {
     }
 
     @FXML
-    private void setGoBackButtonClick(ActionEvent event) {
-        WordsPage.setVisible(false);
+    void setDeleteWordClick(ActionEvent event) {
     }
 
     @FXML
-    private void setAddWordClick(ActionEvent event) {
-
+    void setGoBackButtonClick(ActionEvent event) {
     }
 
     @FXML
-    private void setDeleteWordClick(ActionEvent event) {
+    void initialize() {
 
     }
 

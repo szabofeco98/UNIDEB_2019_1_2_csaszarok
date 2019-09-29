@@ -7,10 +7,10 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.WordsPage">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software.controller.WordsController">
    <children>
-      <Button id="addButton" fx:id="addWord" layoutX="136.0" layoutY="119.0" mnemonicParsing="false" onMouseClicked="#setAddWordClick" text="Szó hozzáadása" />
-      <Button id="deleteWord" fx:id="deleteWord" layoutX="118.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#setDeleteWordClick" prefHeight="25.0" prefWidth="136.0" text="Szó törlése" />
+      <Button id="addButton" fx:id="addWord" layoutX="136.0" layoutY="119.0" mnemonicParsing="false" onAction="#setAddWordClick" text="Szó hozzáadása" />
+      <Button id="deleteWord" fx:id="deleteWord" layoutX="118.0" layoutY="210.0" mnemonicParsing="false" onAction="#setDeleteWordClick" prefHeight="25.0" prefWidth="136.0" text="Szó törlése" />
       <Button id="goBackButton" fx:id="goBackButton" layoutX="161.0" layoutY="300.0" mnemonicParsing="false" onAction="#setGoBackButtonClick" text="Vissza" />
       <TableView id="wordslist" fx:id="wordslist" layoutX="359.0" layoutY="3.0" prefHeight="332.0" prefWidth="228.0">
         <columns>
