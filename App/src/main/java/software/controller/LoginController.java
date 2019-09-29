@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.app.Main;
 import software.modell.LoginModell;
+import software.persistent.Player;
 
 
 import java.net.URL;
@@ -19,6 +20,7 @@ import java.util.ResourceBundle;
 public class LoginController implements Initializable {
 
     LoginModell modell = new LoginModell();
+    public static Player player;
 
     private static Logger logger = LoggerFactory.getLogger(LoginController.class);
     @FXML
@@ -60,6 +62,7 @@ public class LoginController implements Initializable {
         String passwd = password.getText();
         switch (modell.login(uname, passwd)) {
             case 1:
+                player=modell.getPlayer(uname);
                 System.out.println("Sikeres bejelentkezés!");
                 break;
             case 2:

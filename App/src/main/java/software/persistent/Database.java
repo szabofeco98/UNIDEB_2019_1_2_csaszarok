@@ -114,5 +114,13 @@ public class Database {
          return (Player) sql.getResultList().get(0);
      }
 
+     public Player getPlayerByName(String uname){
+         if(!em.getTransaction().isActive())
+             em.getTransaction().begin();
+         Query sql= em.createNativeQuery("select * from Player where username = ?",Player.class);
+         sql.setParameter(1,uname);
+         return (Player) sql.getResultList().get(0);
+     }
+
 
 }

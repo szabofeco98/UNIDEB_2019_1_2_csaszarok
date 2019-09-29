@@ -43,4 +43,8 @@ public class LoginModell {
         }
         return 4; //A felhasználónév és a jelszó külön-külön minimum 4 karakter kell legyen
     }
+
+    public Player getPlayer(String uname){
+        return database.getPlayerByName(uname);
+    }
 }
