@@ -1,9 +1,11 @@
 package software.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import software.app.Main;
 import software.modell.LearnPageModell;
 import software.persistent.Player;
 
@@ -31,4 +33,8 @@ public class LearnPageController {
         player=LoginController.player;
         System.out.println(modell.getuserWords(player));
     }
+    public void goMenu(ActionEvent actionEvent) {
+        Main.setScene("Menu.fxml");
+    }
+
 }

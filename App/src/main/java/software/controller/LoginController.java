@@ -64,7 +64,7 @@ public class LoginController implements Initializable {
         switch (modell.login(uname, passwd)) {
             case 1:
                 player=modell.getPlayer(uname);
-                Main.setScene("WordsPage.fxml",600,400);
+                Main.setScene("Menu.fxml",600,400);
                 System.out.println("Sikeres bejelentkezés!");
                 break;
             case 2:

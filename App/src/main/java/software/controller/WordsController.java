@@ -11,6 +11,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import software.app.Main;
 import software.modell.DictionaryModell;
 import software.persistent.Database;
 import software.persistent.Player;
@@ -68,6 +69,7 @@ public class WordsController {
 
     @FXML
     void setGoBackButtonClick(ActionEvent event) {
+        Main.setScene("Menu.fxml");
     }
 
     @FXML

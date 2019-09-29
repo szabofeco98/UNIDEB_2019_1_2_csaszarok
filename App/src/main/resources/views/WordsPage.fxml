@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software.controller.WordsController">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software.controller.WordsController">
   <children>
     <Button id="addButton" fx:id="addWord" layoutX="115.0" layoutY="143.0" mnemonicParsing="false" onAction="#setAddWordClick" text="Szó hozzáadása" />
     <Button fx:id="deleteWord" layoutX="108.0" layoutY="200.0" mnemonicParsing="false" onAction="#setDeleteWordClick" prefHeight="25.0" prefWidth="136.0" text="Szó törlése" />

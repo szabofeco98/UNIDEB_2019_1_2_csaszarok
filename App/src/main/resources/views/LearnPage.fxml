@@ -5,9 +5,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.LearnPage">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software.controller.LearnPageController">
    <children>
-      <Button fx:id="backButton" layoutX="255.0" layoutY="334.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Vissza" />
+      <Button fx:id="backButton" layoutX="255.0" layoutY="334.0" mnemonicParsing="false" onAction="#goMenu" prefHeight="25.0" prefWidth="92.0" text="Vissza" />
       <TextField fx:id="answerWord" layoutX="215.0" layoutY="131.0" />
       <Label layoutX="282.0" layoutY="103.0" text="Válasz:" />
       <Label fx:id="questionWord" layoutX="212.0" layoutY="65.0" prefHeight="25.0" prefWidth="176.0" text="***********************************************" />
