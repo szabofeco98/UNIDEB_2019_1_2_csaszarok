@@ -58,7 +58,20 @@ public class LoginController implements Initializable {
 
         String uname = username.getText();
         String passwd = password.getText();
-        if (modell.login(uname, passwd))
-            System.out.println("sikeres bejelentkezes");
+        switch (modell.login(uname, passwd)) {
+            case 1:
+                System.out.println("Sikeres bejelentkezés!");
+                break;
+            case 2:
+                System.out.println("Hibás jelszó!");
+                break;
+            case 3:
+                System.out.println("Nem létezik ilyen felhasználó!");
+                break;
+            case 4:
+                System.out.println("Túl rövid felhasználónév/jelszó (min. 4 karakter)!");
+                break;
+        }
+
     }
 }

@@ -27,22 +27,20 @@ public class LoginModell {
         return exist;
     }
 
-    public boolean login(String examinedUsername, String examinedPassword) {
+    public int login(String examinedUsername, String examinedPassword) {
         if (examinedUsername.length() > 3 && examinedPassword.length() > 3) {
             System.out.println(examinedUsername);
-            if (userExist(examinedUsername)) {
-                for (Player player : players) {
-                    if (player.getUsername().equals(examinedUsername)) {
-                        String hashedPassword;
-                        passwd = player.getPassword(); //hashelt
-                        hashedPassword = DigestUtils.sha256Hex(examinedPassword);
-                        if (passwd.equals(hashedPassword)) {
-                            return true;
-                        }
-                    }
-                }
+            for (Player player : players) {
+                if (player.getUsername().equals(examinedUsername)) {
+                    String hashedPassword;
+                    passwd = player.getPassword(); //hashelt
+                    hashedPassword = DigestUtils.sha256Hex(examinedPassword);
+                    if (passwd.equals(hashedPassword))
+                        return 1; //sikeres bejelentkezes
+                    else return 2; // a jelszó hibás
+                } else return 3; //nem létezik ilyen felhasználó
             }
         }
-        return false;
+        return 4; //A felhasználónév és a jelszó külön-külön minimum 4 karakter kell legyen
     }
 }
