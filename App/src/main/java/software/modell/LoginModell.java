@@ -41,4 +41,8 @@ public class LoginModell {
         }
         return 4; //Túl rövid felhasználónév/jelszó (min. 4 karakter)!
     }
+
+    public Player getPlayer(String uname){
+        return database.getPlayerByName(uname);
+    }
 }

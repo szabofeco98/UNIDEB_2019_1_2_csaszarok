@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.apache.commons.codec.digest.DigestUtils;
+import software.modell.DictionaryModell;
 import software.persistent.Database;
 import software.persistent.Player;
 import software.persistent.Word;
@@ -41,6 +42,18 @@ public class Main extends Application {
         }
         stage.setTitle("Dictionary");
         stage.setScene(new Scene(root, 400, 400));
+        stage.setResizable(false);
+        stage.show();
+    }
+
+    public static void setScene(String scene,int width,int height){
+        try {
+            root = FXMLLoader.load(Objects.requireNonNull(Main.class.getClassLoader().getResource("views/"+scene)));
+        } catch (IOException e){
+            System.out.println(e);
+        }
+        stage.setTitle("Dictionary");
+        stage.setScene(new Scene(root, width, height));
         stage.setResizable(false);
         stage.show();
     }

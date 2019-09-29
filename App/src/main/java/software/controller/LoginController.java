@@ -6,11 +6,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.app.Main;
 import software.modell.LoginModell;
+import software.persistent.Player;
 
 
 import java.net.URL;
@@ -18,7 +18,10 @@ import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
 
-    public LoginModell modell = new LoginModell();
+
+    LoginModell modell = new LoginModell();
+    public static Player player;
+
 
     private static Logger logger = LoggerFactory.getLogger(LoginController.class);
     @FXML
@@ -60,6 +63,8 @@ public class LoginController implements Initializable {
         String passwd = password.getText().trim();
         switch (modell.login(uname, passwd)) {
             case 1:
+                player=modell.getPlayer(uname);
+                Main.setScene("WordsPage.fxml",600,400);
                 System.out.println("Sikeres bejelentkezés!");
                 break;
             case 2:
