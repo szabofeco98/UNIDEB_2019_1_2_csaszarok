@@ -144,6 +144,15 @@ Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)
 
 ## 6. Fizikai környezet
 
+Az alkalmazás JavaFX platformon kerül megvalósításra ennek következtében a végeredmény egy asztali alkalmazás lesz. <br> 
+A megvalósítás Intellij Community Netbeans, Eclipse fejlesztői környezetek használatával történik. Az alkalmazás <br>
+fejlesztése során csak is open source függőségeket tartalmazhat. Mivel a szoftver nem csatlakozik hálózathoz, <br>
+ ezért tűzfal vagy egyéb hálózattal kapcsolatos tudnivaló nincs. Az alkalmazás futtatásához szükséges a Java 11-es verziója <br>
+ és mivel Java-ról beszélünk ezért az alkalmazás teljes mértékben platformfüggetlen.
+
+Author: [Hamza Sándor](https://github.com/sandorhamza)
+
+
 ## 7. Architekturálisterv
 A rendszer 3 különböző rétegből fog állni. Az adatbázis réteg az első, erre épül egy logikai réteg, majd a 
 prezentációs réteg. A prezentációs rétegünk egy mobil alkalmazás. Az adatbázist és a prezentációs
