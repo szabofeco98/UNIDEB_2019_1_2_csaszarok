@@ -18,7 +18,7 @@ import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
 
-    LoginModell modell = new LoginModell();
+    public LoginModell modell = new LoginModell();
 
     private static Logger logger = LoggerFactory.getLogger(LoginController.class);
     @FXML
@@ -56,8 +56,8 @@ public class LoginController implements Initializable {
 
     public void test(ActionEvent actionEvent) {
 
-        String uname = username.getText();
-        String passwd = password.getText();
+        String uname = username.getText().trim();
+        String passwd = password.getText().trim();
         switch (modell.login(uname, passwd)) {
             case 1:
                 System.out.println("Sikeres bejelentkezés!");

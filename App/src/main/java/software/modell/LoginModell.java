@@ -15,32 +15,30 @@ public class LoginModell {
 
     private Database database = Database.database;
 
-    List<Player> players = database.getAllPlayer();
-
+    List<Player> players;
     String passwd;
 
-    public boolean userExist(String username) {
-        boolean exist = false;
-        for (Player player : players) {
-            if (player.getUsername().equals(username)) exist = true;
-        }
-        return exist;
-    }
+
 
     public int login(String examinedUsername, String examinedPassword) {
+        players =database.getAllPlayer();
+        boolean exist=false;
         if (examinedUsername.length() > 3 && examinedPassword.length() > 3) {
-            System.out.println(examinedUsername);
+            System.out.println(examinedUsername+" ");
             for (Player player : players) {
+                System.out.println("Getusername:"+player.getUsername());
                 if (player.getUsername().equals(examinedUsername)) {
+                    exist=true; //van ilyen felhasználó
                     String hashedPassword;
                     passwd = player.getPassword(); //hashelt
                     hashedPassword = DigestUtils.sha256Hex(examinedPassword);
                     if (passwd.equals(hashedPassword))
                         return 1; //sikeres bejelentkezes
                     else return 2; // a jelszó hibás
-                } else return 3; //nem létezik ilyen felhasználó
+                }
             }
+            if(exist==false) return 3; //Nem létezik ilyen felhasználó!
         }
-        return 4; //A felhasználónév és a jelszó külön-külön minimum 4 karakter kell legyen
+        return 4; //Túl rövid felhasználónév/jelszó (min. 4 karakter)!
     }
 }
