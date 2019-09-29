@@ -142,6 +142,25 @@ Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)
 
 ## 5. Funkcionálisterv
 
+Képernyőtervek:
+-Regisztráció: <br>
+A képernyőn megjelennek a regisztrációhoz kitöltendő mezők, majd ha a felhasználó kitöltötte ezeket a mezőket, a Regisztráció gombra kattintva tudja magát regisztrálni a rendszerbe. Ha a regisztráció már megtörtént, ebben az esetben a "Tovább a bejelelntezésre" gomb megnyomásával a bejelentkező felületre lesz továbbítva.
+![](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/Registration.png)
+-Bejelentkezés: <br>
+A bejelentkező felületnél a felhasználó, a szükséges adatok megadása utána a "Bejelentkezés" gombra kattintva tudunk a saját profilunkhoz hozzáférni. Ha még nem rendelkezik regisztrált profillal, abban az esetben a "Regisztráció" gombra kattintva átkerül a Regisztráció felületre.
+![](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/Login.png)
+-Menü: <br>
+A sikeres bejelentezés után a felhasználó a menüben találja magát. Itt lehetőség van az összes szó vagy véletlenszerű szavak visszakérdezésére, ezzel hozzásegítve a felhasználót az új szavak megtanulására. Ha minden szót tud vagy csak esetleg új fába vágná a fejszéjét, lehetősége nyílik a saját adatbázisának kezelésére az "Új szavak hozzáadása" gombbal. Ezen felül egy Kijelentkezés gomb található, amivel a bejelentkező felületre lehet vissza navigálni.
+![](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/Menu.png)
+-Tanulás: <br>
+Ennél a lehetőségnél a felhasználónak két lehetősége van. Az egyik, hogy az adatbázisban lévő összes szót visszakérdezi az adatbázisból, a másik lehetőségnél a véletlenszerű visszakérdezés tíz szót kérdez vissza. 
+![](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/Test.png)
+-Adatbázis: <br>
+Ezen a felületen a szavakat tudjuk kezelni. Szavak hozzáadására, illetve törlésére van lehetőségünk. A magyar illetve az angol verzió után a "Szó hozzáadása" gombbal bekerül az adatbázisban, ami a jobb oldalon látható. Ha az adatbázisban rákattintunk egy adott szóra, a "Szó törlése" gombbal tudjuk törölni. A Magyar illetve Angol cellákra kattintva tudjuk betűrendbe állítani az eddig bevitt szavakat.
+![](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/WordModifying.png)
+
+Author: [Hamza Sándor](https://github.com/sandorhamza)
+
 ## 6. Fizikai környezet
 
 Az alkalmazás JavaFX platformon kerül megvalósításra ennek következtében a végeredmény egy asztali alkalmazás lesz. <br> 
