@@ -103,7 +103,7 @@ public class RegistrationController implements Initializable {
 
     public void goLogin(ActionEvent actionEvent) {
 
-        Main.setScene("login.fxml");
+        Main.setScene("login.fxml", 600,400);
 
     }
 

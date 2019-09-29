@@ -69,7 +69,7 @@ public class WordsController {
 
     @FXML
     void setGoBackButtonClick(ActionEvent event) {
-        Main.setScene("Menu.fxml");
+        Main.setScene("Menu.fxml", 600,400);
     }
 
     @FXML

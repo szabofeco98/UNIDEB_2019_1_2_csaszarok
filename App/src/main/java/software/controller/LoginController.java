@@ -52,7 +52,7 @@ public class LoginController implements Initializable {
     }
 
     public void goRegistration(ActionEvent actionEvent) {
-        Main.setScene("registration.fxml");
+        Main.setScene("registration.fxml", 600, 400);
         System.out.println("regisztráció");
 
     }

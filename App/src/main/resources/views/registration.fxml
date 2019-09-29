@@ -4,30 +4,31 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software.controller.RegistrationController">
-  <children>
-    <Pane fx:id="reg" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: WHITE;">
-      <children>
-        <Button id="test" fx:id="registration" layoutX="62.0" layoutY="210.0" mnemonicParsing="false" onAction="#registration" prefHeight="30.9609375" prefWidth="89.0" text="Regisztráció" />
-        <Label layoutX="73.0" layoutY="88.0" minHeight="17.951171875" prefHeight="17.951171875" prefWidth="110.0" text="Felhasználónév">
-          <font>
-            <Font size="15.0" fx:id="x1" />
-          </font>
-        </Label>
-        <Label font="$x1" layoutX="73.0" layoutY="146.0" minHeight="17.951171875" prefHeight="17.951171875" prefWidth="110.0" text="Jelszó" />
-        <Label font="$x1" layoutX="73.0" layoutY="176.0" minHeight="17.951171875" prefHeight="17.951171875" prefWidth="110.0" text="Jelszó(újra)" />
-        <Label font="$x1" layoutX="73.0" layoutY="115.0" minHeight="17.951171875" prefHeight="17.951171875" prefWidth="110.0" text="email" />
-        <TextField fx:id="username" layoutX="200.0" layoutY="84.0" prefWidth="142.0" />
-        <TextField fx:id="email" layoutX="200.0" layoutY="115.0" prefWidth="142.0" />
-        <PasswordField fx:id="password" layoutX="200.0" layoutY="146.0" prefWidth="142.0" />
-        <PasswordField fx:id="repassword" layoutX="200.0" layoutY="178.0" prefWidth="142.0" />
-        <Button id="test" fx:id="gologin" layoutX="62.0" layoutY="259.0" mnemonicParsing="false" onAction="#goLogin" prefHeight="30.9609375" prefWidth="152.0" text="Tovább bejelentkezésre" />
-        <Label fx:id="error" alignment="CENTER" layoutX="191.0" layoutY="210.0" prefWidth="160.0" text="" textFill="RED" />
-        <Label fx:id="sucess" alignment="CENTER" font="$x1" layoutX="200.0" layoutY="206.0" prefWidth="160.0" text="" textFill="#10cc00" />
-      </children>
-    </Pane>
-  </children>
-</Pane>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software.controller.RegistrationController">
+   <children>
+      <Pane fx:id="reg" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Button id="test" fx:id="registration" layoutX="145.0" layoutY="226.0" mnemonicParsing="false" onAction="#registration" prefHeight="31.0" prefWidth="132.0" text="Regisztráció" />
+            <Label layoutX="145.0" layoutY="81.0" minHeight="17.951171875" prefHeight="17.951171875" prefWidth="110.0" text="Felhasználónév">
+               <font>
+                  <Font size="15.0" fx:id="x1" />
+               </font>
+            </Label>
+            <Label font="$x1" layoutX="145.0" layoutY="139.0" minHeight="17.951171875" prefHeight="17.951171875" prefWidth="110.0" text="Jelszó" />
+            <Label font="$x1" layoutX="145.0" layoutY="169.0" minHeight="17.951171875" prefHeight="17.951171875" prefWidth="110.0" text="Jelszó(újra)" />
+            <Label font="$x1" layoutX="145.0" layoutY="108.0" minHeight="17.951171875" prefHeight="17.951171875" prefWidth="110.0" text="email" />
+            <TextField fx:id="username" layoutX="272.0" layoutY="77.0" prefWidth="142.0" />
+            <TextField fx:id="email" layoutX="272.0" layoutY="108.0" prefWidth="142.0" />
+            <PasswordField fx:id="password" layoutX="272.0" layoutY="139.0" prefWidth="142.0" />
+            <PasswordField fx:id="repassword" layoutX="272.0" layoutY="171.0" prefWidth="142.0" />
+            <Button id="test" fx:id="gologin" layoutX="145.0" layoutY="272.0" mnemonicParsing="false" onAction="#goLogin" prefHeight="31.0" prefWidth="198.0" text="Tovább bejelentkezésre" />
+            <Label fx:id="error" alignment="CENTER" layoutX="191.0" layoutY="210.0" prefWidth="160.0" text="" textFill="RED" />
+            <Label fx:id="sucess" alignment="CENTER" font="$x1" layoutX="272.0" layoutY="199.0" prefWidth="160.0" text="" textFill="#10cc00" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

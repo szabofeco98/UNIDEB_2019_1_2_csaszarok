@@ -28,20 +28,20 @@ public class MenuController implements Initializable {
     public static Player player;
 
     public void LearnPageAll(ActionEvent actionEvent) {
-        Main.setScene("LearnPage.fxml");
+        Main.setScene("LearnPage.fxml",600, 400);
     }
 
     public void LearnPageRand(ActionEvent actionEvent) {
-        Main.setScene("LearnPage.fxml");
+        Main.setScene("LearnPage.fxml", 600,400);
     }
 
     public void WordsPage(ActionEvent actionEvent) {
 
-        Main.setScene("WordsPage.fxml");
+        Main.setScene("WordsPage.fxml", 600,400);
     }
 
     public void LogOut(ActionEvent actionEvent) {
-        Main.setScene("registration.fxml");
+        Main.setScene("registration.fxml", 600, 400);
         System.out.println("kijelentkezés");
     }
 

@@ -34,7 +34,7 @@ public class LearnPageController {
         System.out.println(modell.getuserWords(player));
     }
     public void goMenu(ActionEvent actionEvent) {
-        Main.setScene("Menu.fxml");
+        Main.setScene("Menu.fxml", 600, 400);
     }
 
 }

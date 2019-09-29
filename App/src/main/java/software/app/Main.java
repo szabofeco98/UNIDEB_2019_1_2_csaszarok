@@ -25,7 +25,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         stage=primaryStage;
-        setScene("login.fxml");
+        setScene("login.fxml", 600,400);
     }
 
     /**
@@ -41,7 +41,7 @@ public class Main extends Application {
             System.out.println(e);
         }
         stage.setTitle("Dictionary");
-        stage.setScene(new Scene(root, 400, 400));
+        stage.setScene(new Scene(root, 600, 400));
         stage.setResizable(false);
         stage.show();
     }
