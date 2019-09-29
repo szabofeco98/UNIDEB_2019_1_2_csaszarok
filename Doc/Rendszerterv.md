@@ -140,9 +140,9 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
 
 Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)
 
-## 5. Funkcionálisterv
+## 5. Funkcionális terv
 
-Képernyőtervek:
+Képernyőtervek: <br>
 -Regisztráció: <br>
 A képernyőn megjelennek a regisztrációhoz kitöltendő mezők, majd ha a felhasználó kitöltötte ezeket a mezőket, a Regisztráció gombra kattintva tudja magát regisztrálni a rendszerbe. Ha a regisztráció már megtörtént, ebben az esetben a "Tovább a bejelelntezésre" gomb megnyomásával a bejelentkező felületre lesz továbbítva.
 ![](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/Registration.png) <br>
