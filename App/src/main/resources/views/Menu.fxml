@@ -9,5 +9,6 @@
         <Button layoutX="210.0" layoutY="120.0" mnemonicParsing="false" onAction="#LearnPageAll" prefHeight="26.0" prefWidth="181.0" text="Összes szó tanulása" />
         <Button layoutX="210.0" layoutY="285.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="26.0" prefWidth="181.0" text="Kijelentkezés" />
         <Button layoutX="210.0" layoutY="230.0" mnemonicParsing="false" onAction="#WordsPage" prefHeight="26.0" prefWidth="181.0" text="Új szavak hozzáadása" />
+      <Button layoutX="210.0" layoutY="65.0" mnemonicParsing="false" onAction="#GoUserFunction" prefHeight="26.0" prefWidth="181.0" text="Settings" />
     </children>
 </AnchorPane>

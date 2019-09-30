@@ -71,4 +71,8 @@ public class MenuController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         player = LoginController.player;
     }
+
+    public void GoUserFunction(ActionEvent actionEvent) {
+        Main.setScene("userfunction.fxml",600,400);
+    }
 }
