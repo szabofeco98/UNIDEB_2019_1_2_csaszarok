@@ -30,20 +30,29 @@ public class UserController {
         private Label error;
 
         @FXML
-        private Label sucess,sucessPass,errorPass;
+        private Label sucess;
+
+        @FXML
+        private Label sucessPass;
+
+        @FXML
+        private Label errorPass;
 
         @FXML
         private Pane passWord;
 
         @FXML
-        private PasswordField passfield,rePass;
+        private PasswordField passfield;
+
+        @FXML
+        private PasswordField rePass;
 
         @FXML
         void modifyUname(ActionEvent event) {
             String answer=modell.updateUser(newuname.getText(),player);
             if (answer.equals("wrong")){
                 sucess.setText("");
-                error.setText("Létezik a felhasználó név");
+                error.setText("Rossz felhasználónév");
             }else{
                 error.setText("");
                 sucess.setText("Sikeres");

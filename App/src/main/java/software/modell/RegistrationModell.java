@@ -105,8 +105,9 @@ public class RegistrationModell {
     }
 
     public String  updateUser(String newUser, Player player){
+
         players=database.getAllPlayer();
-        if(userExist(newUser)) {
+        if(userExist(newUser) || !userIsValid(newUser)) {
             System.out.println("létezik gec");
             return "wrong";
         }
@@ -117,10 +118,12 @@ public class RegistrationModell {
     }
 
     public String updatePassword(String newPass,String repass,Player player){
+
         if(passwordIsValid(newPass,repass)) {
             player.setPassword(DigestUtils.sha256Hex(newPass));
             database.update(player);
             return "sucess";
-        }return "wrong";
+        }
+        return "wrong";
     }
 }
