@@ -233,16 +233,18 @@ Az osztáylok váza:
 Author:[Szabó Ferenc](https://github.com/szabofeco98),[Petrik Dávid](https://github.com/PDavidson123)
 
 ## 10. Tesztterv
-| Vizsgálat módja/eszköze, részletes leírása |Elvárt eredmény  | Eredmény | Megfelelőség státusza (Megfelelő,Pótlás határideje) |
-|:------------------------------------------:|:---------------:|:--------:|:---------------------------------------------------:|
-|Felhasználó regisztrálása                   |     A regisztráció sikeres legyen |          |                                                     |
-|A bejelentkezési adatok kitöltését követően a felhasználó bejelentkezik|  A bejelentkezés sikeres |          |                                                     |
-|A kijelentkezés gombra rányomva kijelentkezzen |	Sikeres Kijelentkezés| | |
-|Ellenőrizni az adatbázisokat hogy képesek-e az adott szavak felvételére, lekérdezésére |	Sikeres lekérdezés,adatfelvétel| | |
-|Kilistázzuk az nehezen tanult szavakat      | A szavak kilistázódnak | | |
-|Teszt elkezdése                             | A szavak lekérdezése elkezdődik | | |
-|Teszt befejződése                           | A teszt sikeresen befejeződik, majd a kiértékelés megjelenik| | |
-|Megnyitjuk a ranglistát	|A ranglista sikeresen megnyílik az aktuális adatokkal| | |
+| Vizsgált funkció |input|Elvárt eredmény  | Eredmény | Megfelelőség státusza (Megfelelő,Pótlás határideje) |
+|:-:|:-:|:-:|:-:|:-:|
+|Regisztráció|4-karakternél rövidebb felhasználó név|Sikertelen|Sikertelen|Megfelelt|
+|Regisztáció|létező felhasználónév|Sikertelen|Sikertelen|Megfelelt|
+|Regisztráció|helytelen email cím|Sikertelen|Sikertelen|Megfelelt|
+|Regisztráció|4-karakternél rövidebb jelszó|Sikertelen|Sikertelen|Megfelelt|
+|Regisztráció|Nem egyező jelszó|Sikertelen|Sikertelen|Megfelelt|
+|Regisztráció|Megfelelő email,Megfelelő jelszó,Megfelelő felhasználó név|Sikeres|Sikeres |Megfelelt|
+|Szavak hozzá adása|Egyik szó üres|Sikertelen|Sikertelen|Megfelelt|
+|Szavak hozzá adása|Mind két szó kitöltve|Sikeres|Sikeres|Megfelelt|
+|Szavak törlése|Nincs kijelölt szó|Sikertelen|Sikertelen|Megfelelt|
+|Szavak törlése|Nincs kijelölt szó|Sikeres|Sikeres|Megfelelt|
 
 
 Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo) 
