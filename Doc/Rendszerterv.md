@@ -242,6 +242,10 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98),[Petrik Dávid](https://g
 |Regisztráció|4-karakternél rövidebb jelszó|Sikertelen|Sikertelen|Megfelelt|
 |Regisztráció|Nem egyező jelszó|Sikertelen|Sikertelen|Megfelelt|
 |Regisztráció|Megfelelő email,Megfelelő jelszó,Megfelelő felhasználó név|Sikeres|Sikeres |Megfelelt|
+|Bejelentkezés|Sikeres bejelentkezés|Sikeres|Sikeres |Megfelelt|
+|Bejelentkezés|Hibás jelszó!|Sikertelen|Sikertelen|Megfelelt|
+|Bejelentkezés|Nem létezik ilyen felhasználó|Sikertelen|Sikertelen|Megfelelt|
+|Bejelentkezés|Túl rövid felhasználónév/jelszó (min. 4 karakter)|Sikertelen|Sikertelen|Megfelelt|
 |Szavak hozzá adása|Egyik szó üres|Sikertelen|Sikertelen|Megfelelt|
 |Szavak hozzá adása|Mind két szó kitöltve|Sikeres|Sikeres|Megfelelt|
 |Szavak törlése|Nincs kijelölt szó|Sikertelen|Sikertelen|Megfelelt|
