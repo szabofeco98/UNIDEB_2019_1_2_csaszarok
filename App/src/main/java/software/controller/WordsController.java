@@ -16,7 +16,7 @@ import software.persistent.Word;
 
 public class WordsController {
 
-    DictionaryModell dictionaryModell=new DictionaryModell();
+    DictionaryModell dictionaryModell = new DictionaryModell();
     Player player;
     @FXML
     TableColumn<Object, Object> hun;
@@ -33,16 +33,16 @@ public class WordsController {
 
     @FXML
     void setAddWordClick(ActionEvent event) {
-        String hunWord=null;
-        if(!hunword.getText().isEmpty())
-            hunWord= hunword.getText();
-        String endWord=null;
-        if(!endword.getText().isEmpty())
-            endWord= endword.getText();
-        if(hunWord!=null && endWord!=null) {
-            Word word=Word.builder().
-            hunWord(hunWord).engWord(endWord).
-            player(player).build();
+        String hunWord = null;
+        if (!hunword.getText().isEmpty())
+            hunWord = hunword.getText();
+        String endWord = null;
+        if (!endword.getText().isEmpty())
+            endWord = endword.getText();
+        if (hunWord != null && endWord != null) {
+            Word word = Word.builder().
+                    hunWord(hunWord).engWord(endWord).
+                    player(player).build();
             dictionaryModell.addWord(word);
             setWordslist();
         }
@@ -59,24 +59,24 @@ public class WordsController {
 
     @FXML
     void setGoBackButtonClick(ActionEvent event) {
-        Main.setScene("Menu.fxml", 600,400);
+        Main.setScene("Menu.fxml", 600, 400);
     }
 
     @FXML
     void initialize() {
-        player=LoginController.player;
+        player = LoginController.player;
         setWordslist();
     }
 
     @FXML
-    public void setWordslist(){
-        ObservableList<Word> obslist= FXCollections.observableList(dictionaryModell.getuserWords(player));
+    public void setWordslist() {
+        ObservableList<Word> obslist = FXCollections.observableList(dictionaryModell.getuserWords(player));
         hun.setCellValueFactory(new PropertyValueFactory<>("hunWord"));
         eng.setCellValueFactory(new PropertyValueFactory<>("engWord"));
         wordslist.setItems(obslist);
     }
 
-    public long getWordId(){
+    public long getWordId() {
         Word word = wordslist.getSelectionModel().getSelectedItem();
         return word.getId();
     }

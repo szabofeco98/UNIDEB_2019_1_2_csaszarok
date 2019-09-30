@@ -140,9 +140,37 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98)
 
 Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)
 
-## 5. Funkcionálisterv
+## 5. Funkcionális terv
+
+Képernyőtervek: <br>
+-Regisztráció: <br>
+A képernyőn megjelennek a regisztrációhoz kitöltendő mezők, majd ha a felhasználó kitöltötte ezeket a mezőket, a Regisztráció gombra kattintva tudja magát regisztrálni a rendszerbe. Ha a regisztráció már megtörtént, ebben az esetben a "Tovább a bejelelntezésre" gomb megnyomásával a bejelentkező felületre lesz továbbítva.
+![](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/Registration.png) <br>
+-Bejelentkezés: <br>
+A bejelentkező felületnél a felhasználó, a szükséges adatok megadása utána a "Bejelentkezés" gombra kattintva tudunk a saját profilunkhoz hozzáférni. Ha még nem rendelkezik regisztrált profillal, abban az esetben a "Regisztráció" gombra kattintva átkerül a Regisztráció felületre.
+![](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/Login.png) <br>
+-Menü: <br>
+A sikeres bejelentezés után a felhasználó a menüben találja magát. Itt lehetőség van az összes szó vagy véletlenszerű szavak visszakérdezésére, ezzel hozzásegítve a felhasználót az új szavak megtanulására. Ha minden szót tud vagy csak esetleg új fába vágná a fejszéjét, lehetősége nyílik a saját adatbázisának kezelésére az "Új szavak hozzáadása" gombbal. Ezen felül egy Kijelentkezés gomb található, amivel a bejelentkező felületre lehet vissza navigálni.
+![](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/Menu.png) <br>
+-Tanulás: <br>
+Ennél a lehetőségnél a felhasználónak két lehetősége van. Az egyik, hogy az adatbázisban lévő összes szót visszakérdezi az adatbázisból, a másik lehetőségnél a véletlenszerű visszakérdezés tíz szót kérdez vissza. 
+![](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/Test.png) <br>
+-Adatbázis: <br>
+Ezen a felületen a szavakat tudjuk kezelni. Szavak hozzáadására, illetve törlésére van lehetőségünk. A magyar illetve az angol verzió után a "Szó hozzáadása" gombbal bekerül az adatbázisban, ami a jobb oldalon látható. Ha az adatbázisban rákattintunk egy adott szóra, a "Szó törlése" gombbal tudjuk törölni. A Magyar illetve Angol cellákra kattintva tudjuk betűrendbe állítani az eddig bevitt szavakat.
+![](https://github.com/szabofeco98/UNIDEB_2019_1_2_csaszarok/blob/master/Doc/images/WordModifying.png) <br>
+
+Author: [Hamza Sándor](https://github.com/sandorhamza)
 
 ## 6. Fizikai környezet
+
+Az alkalmazás JavaFX platformon kerül megvalósításra ennek következtében a végeredmény egy asztali alkalmazás lesz. <br> 
+A megvalósítás Intellij Community Netbeans, Eclipse fejlesztői környezetek használatával történik. Az alkalmazás <br>
+fejlesztése során csak is open source függőségeket tartalmazhat. Mivel a szoftver nem csatlakozik hálózathoz, <br>
+ ezért tűzfal vagy egyéb hálózattal kapcsolatos tudnivaló nincs. Az alkalmazás futtatásához szükséges a Java 11-es verziója <br>
+ és mivel Java-ról beszélünk ezért az alkalmazás teljes mértékben platformfüggetlen.
+
+Author: [Hamza Sándor](https://github.com/sandorhamza)
+
 
 ## 7. Architekturálisterv
 A rendszer 3 különböző rétegből fog állni. Az adatbázis réteg az első, erre épül egy logikai réteg, majd a 
@@ -205,19 +233,30 @@ Az osztáylok váza:
 Author:[Szabó Ferenc](https://github.com/szabofeco98),[Petrik Dávid](https://github.com/PDavidson123)
 
 ## 10. Tesztterv
-| Vizsgálat módja/eszköze, részletes leírása |Elvárt eredmény  | Eredmény | Megfelelőség státusza (Megfelelő,Pótlás határideje) |
-|:------------------------------------------:|:---------------:|:--------:|:---------------------------------------------------:|
-|Felhasználó regisztrálása                   |     A regisztráció sikeres legyen |          |                                                     |
-|A bejelentkezési adatok kitöltését követően a felhasználó bejelentkezik|  A bejelentkezés sikeres |          |                                                     |
-|A kijelentkezés gombra rányomva kijelentkezzen |	Sikeres Kijelentkezés| | |
-|Ellenőrizni az adatbázisokat hogy képesek-e az adott szavak felvételére, lekérdezésére |	Sikeres lekérdezés,adatfelvétel| | |
-|Kilistázzuk az nehezen tanult szavakat      | A szavak kilistázódnak | | |
-|Teszt elkezdése                             | A szavak lekérdezése elkezdődik | | |
-|Teszt befejződése                           | A teszt sikeresen befejeződik, majd a kiértékelés megjelenik| | |
-|Megnyitjuk a ranglistát	|A ranglista sikeresen megnyílik az aktuális adatokkal| | |
+| Vizsgált funkció |input|Elvárt eredmény  | Eredmény | Megfelelőség státusza (Megfelelő,Pótlás határideje) |
+|:-:|:-:|:-:|:-:|:-:|
+|Regisztráció|4-karakternél rövidebb felhasználó név|Sikertelen|Sikertelen|Megfelelt|
+|Regisztáció|létező felhasználónév|Sikertelen|Sikertelen|Megfelelt|
+|Regisztráció|helytelen email cím|Sikertelen|Sikertelen|Megfelelt|
+|Regisztráció|létező email cím|Sikertelen|Sikertelen|Megfelelt|
+|Regisztráció|4-karakternél rövidebb jelszó|Sikertelen|Sikertelen|Megfelelt|
+|Regisztráció|Nem egyező jelszó|Sikertelen|Sikertelen|Megfelelt|
+|Regisztráció|Megfelelő email,Megfelelő jelszó,Megfelelő felhasználó név|Sikeres|Sikeres |Megfelelt|
+|Szavak hozzá adása|Egyik szó üres|Sikertelen|Sikertelen|Megfelelt|
+|Szavak hozzá adása|Mind két szó kitöltve|Sikeres|Sikeres|Megfelelt|
+|Szavak törlése|Nincs kijelölt szó|Sikertelen|Sikertelen|Megfelelt|
+|Szavak törlése|Nincs kijelölt szó|Sikeres|Sikeres|Megfelelt|
+|Tovább a bejelentkezésre|Rá kattintás|Sikeres|Sikeres|Megfelelt|
+|Jelszó megváltoztatás | 4 karakternél rövidebb jelszó | Sikertelen | Sikertelen | Megfelelt |
+|Jelszó megváltoztatás | Létező jelszó | Sikertelen | Sikertelen | Megfelelt |
+|Jelszó megváltoztatás | Megfelelő | Sikeres | Sikeres | Megfelelt |
+|Felhasználó megváltoztatás | 4 karakternél rövidebb felhasználónév | Sikertelen | Sikertelen | Megfelelt 
+|Felhasználó megváltoztatás | Létező felhasználónév | Sikertelen | Sikertelen | Megfelelt |
+|Felhasználó megváltoztatás | Megfelelő | Sikeres | Sikeres | Megfelelt |
 
 
-Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo) 
+Author: [Szabó Alexandra_Ilona](https://github.com/Wrigozo), [Szabó Ferenc](https://github.com/szabofeco98), [Petrik Dávid](https://github.com/PDavidson123), [Hamza Sándor](https://github.com/sandorhamza)
+
 
 
 ## 11. Telepitésiterv
