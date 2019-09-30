@@ -103,4 +103,24 @@ public class RegistrationModell {
     public boolean emailIsValid(String email){
        return EmailValidator.getInstance().isValid(email);
     }
+
+    public String  updateUser(String newUser, Player player){
+        players=database.getAllPlayer();
+        if(userExist(newUser)) {
+            System.out.println("létezik gec");
+            return "wrong";
+        }
+        player.setUsername(newUser);
+        database.update(player);
+        System.out.println("update");
+        return "sucess";
+    }
+
+    public String updatePassword(String newPass,String repass,Player player){
+        if(passwordIsValid(newPass,repass)) {
+            player.setPassword(DigestUtils.sha256Hex(newPass));
+            database.update(player);
+            return "sucess";
+        }return "wrong";
+    }
 }

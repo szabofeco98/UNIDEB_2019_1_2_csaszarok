@@ -134,4 +134,15 @@ public class Database {
          return (Word) sql.getResultList().get(0);
      }
 
+    public <T> void update(T entity){
+        if(!em.getTransaction().isActive())
+            em.getTransaction().begin();
+        try {
+            em.merge(entity);
+        } catch (Exception e) {
+            System.err.println("baj van");
+        }
+        em.getTransaction().commit();
+    }
+
 }
