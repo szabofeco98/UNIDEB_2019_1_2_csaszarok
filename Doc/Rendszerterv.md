@@ -245,9 +245,15 @@ Author:[Szabó Ferenc](https://github.com/szabofeco98),[Petrik Dávid](https://g
 |Szavak hozzá adása|Mind két szó kitöltve|Sikeres|Sikeres|Megfelelt|
 |Szavak törlése|Nincs kijelölt szó|Sikertelen|Sikertelen|Megfelelt|
 |Szavak törlése|Nincs kijelölt szó|Sikeres|Sikeres|Megfelelt|
+|Jelszó megváltoztatás | 4 karakternél rövidebb jelszó | Sikertelen | Sikertelen | Megfelelt |
+|Jelszó megváltoztatás | Létező jelszó | Sikertelen | Sikertelen | Megfelelt |
+|Jelszó megváltoztatás | Megfelelő | Sikeres | Sikeres | Megfelelt |
+|Felhasználó megváltoztatás | 4 karakternél rövidebb felhasználónév | Sikertelen | Sikertelen | Megfelelt 
+|Felhasználó megváltoztatás | Létező felhasználónév | Sikertelen | Sikertelen | Megfelelt |
+|Felhasználó megváltoztatás | Megfelelő | Sikeres | Sikeres | Megfelelt |
 
+Author: [Szabó Alexandra_Ilona](https://github.com/Wrigozo), [Szabó Ferenc](https://github.com/szabofeco98), [Petrik Dávid](https://github.com/PDavidson123), [Hamza Sándor](https://github.com/sandorhamza)
 
-Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo) 
 
 
 ## 11. Telepitésiterv
