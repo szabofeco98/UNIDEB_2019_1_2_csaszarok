@@ -6,8 +6,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import software.app.Main;
 import software.modell.LoginModell;
 import software.persistent.Player;
@@ -22,8 +20,6 @@ public class LoginController implements Initializable {
     LoginModell modell = new LoginModell();
     public static Player player;
 
-
-    private static Logger logger = LoggerFactory.getLogger(LoginController.class);
     @FXML
     public AnchorPane login;
 
@@ -48,13 +44,10 @@ public class LoginController implements Initializable {
     private void initialize() {
         // TODO
         login.setVisible(true);
-        logger.info("Our application has been initialized successfully!");
     }
 
     public void goRegistration(ActionEvent actionEvent) {
         Main.setScene("registration.fxml", 600, 400);
-        System.out.println("regisztráció");
-
     }
 
     public void test(ActionEvent actionEvent) {
@@ -63,8 +56,8 @@ public class LoginController implements Initializable {
         String passwd = password.getText().trim();
         switch (modell.login(uname, passwd)) {
             case 1:
-                player=modell.getPlayer(uname);
-                Main.setScene("Menu.fxml",600,400);
+                player = modell.getPlayer(uname);
+                Main.setScene("Menu.fxml", 600, 400);
                 System.out.println("Sikeres bejelentkezés!");
                 break;
             case 2:

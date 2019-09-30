@@ -11,7 +11,7 @@ public class RegistrationModell {
     /**
      * Adatbázis kapcsolathoz és műveletekhez szükséges Objektum
      */
-    private Database database=Database.database;
+    private Database database = Database.database;
 
     /**
      * A player tábla elemeit tartalmazó lista
@@ -26,12 +26,12 @@ public class RegistrationModell {
      * @return true ha már létezik ilyen felhasználónév false ha nem létezik.
      */
     public boolean userExist(String username) {
-        boolean exist=false;
+        boolean exist = false;
         System.out.println(players.size());
         for (Player player : players) {
-            System.out.println("tábla username:"+player.getUsername()+"-megadott username:"+username);
-            if(player.getUsername()!=null)
-            if(player.getUsername().equals(username)) exist=true;
+            System.out.println("tábla username:" + player.getUsername() + "-megadott username:" + username);
+            if (player.getUsername() != null)
+                if (player.getUsername().equals(username)) exist = true;
         }
         return exist;
     }
@@ -43,14 +43,14 @@ public class RegistrationModell {
      * @param email Felhasználótól kapott username
      * @return true ha már létezik ilyen emailcím false ha nem létezik.
      */
-    public boolean emaiExist(String email){
-        boolean exist=false;
+    public boolean emaiExist(String email) {
+        boolean exist = false;
         for (Player player : players) {
-            System.out.println("táble email:"+player.getEmail()+"-medadott email"+email);
-            if(player.getEmail()!=null)
-            if(player.getEmail().equals(email)){
-                exist=true;
-            }
+            System.out.println("táble email:" + player.getEmail() + "-medadott email" + email);
+            if (player.getEmail() != null)
+                if (player.getEmail().equals(email)) {
+                    exist = true;
+                }
         }
         return exist;
     }
@@ -64,43 +64,43 @@ public class RegistrationModell {
      * @return "sucess" amenyiben sikeresen felkerült az adatbázisba "userExist" amennyiben
      * már létezik a felhasználónév és "emailExist" ha már lézik felhasználó ezzel az email címmel.
      */
-    public String updatePlayer(Player player,String repassword){
-        players=database.getAllPlayer();
+    public String updatePlayer(Player player, String repassword) {
+        players = database.getAllPlayer();
 
 
-        if (!userIsValid(player.getUsername())){
+        if (!userIsValid(player.getUsername())) {
             return "userInvalid";
         }
 
-        if(!emailIsValid(player.getEmail())){
+        if (!emailIsValid(player.getEmail())) {
             return "emailInvalid";
         }
 
-        if(!passwordIsValid(player.getPassword(),repassword)){
+        if (!passwordIsValid(player.getPassword(), repassword)) {
             return "passwordInvalid";
         }
-        if(userExist(player.getUsername())){
+        if (userExist(player.getUsername())) {
             System.out.println(true);
             return "userExist";
         }
-        if(emaiExist(player.getEmail())){
+        if (emaiExist(player.getEmail())) {
             System.out.println(true);
             return "emailExist";
         }
         player.setPassword(DigestUtils.sha256Hex(player.getPassword()));
         database.persist(player);
         return "sucess";
-    } 
-
-    public boolean passwordIsValid(String password,String repassword){
-        return password.equals(repassword) && password.length()>3;
     }
 
-    public boolean userIsValid(String username){
-        return username.length()>3;
+    public boolean passwordIsValid(String password, String repassword) {
+        return password.equals(repassword) && password.length() > 3;
     }
 
-    public boolean emailIsValid(String email){
-       return EmailValidator.getInstance().isValid(email);
+    public boolean userIsValid(String username) {
+        return username.length() > 3;
+    }
+
+    public boolean emailIsValid(String email) {
+        return EmailValidator.getInstance().isValid(email);
     }
 }

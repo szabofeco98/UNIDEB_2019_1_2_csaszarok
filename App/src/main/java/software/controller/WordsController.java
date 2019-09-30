@@ -1,45 +1,35 @@
 package software.controller;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import software.app.Main;
 import software.modell.DictionaryModell;
-import software.persistent.Database;
 import software.persistent.Player;
 import software.persistent.Word;
-
-import javax.xml.crypto.Data;
-
 
 public class WordsController {
 
     DictionaryModell dictionaryModell=new DictionaryModell();
     Player player;
-
-    @FXML
-    private TextField endword;
-
-    @FXML
-    private TextField hunword;
-
-    @FXML
-    private TableView<Word> wordslist;
-
     @FXML
     TableColumn<Object, Object> hun;
-
     @FXML
     TableColumn<Object, Object> eng;
-
+    @FXML
+    private TextField endword;
+    @FXML
+    private TextField hunword;
+    @FXML
+    private TableView<Word> wordslist;
+    @FXML
+    private Label countWordsMess;
 
     @FXML
     void setAddWordClick(ActionEvent event) {

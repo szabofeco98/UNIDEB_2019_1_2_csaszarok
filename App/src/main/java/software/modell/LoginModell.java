@@ -19,16 +19,15 @@ public class LoginModell {
     String passwd;
 
 
-
     public int login(String examinedUsername, String examinedPassword) {
-        players =database.getAllPlayer();
-        boolean exist=false;
+        players = database.getAllPlayer();
+        boolean exist = false;
         if (examinedUsername.length() > 3 && examinedPassword.length() > 3) {
-            System.out.println(examinedUsername+" ");
+
             for (Player player : players) {
-                System.out.println("Getusername:"+player.getUsername());
+                logger.info("Getusername:" + player.getUsername());
                 if (player.getUsername().equals(examinedUsername)) {
-                    exist=true; //van ilyen felhasználó
+                    exist = true; //van ilyen felhasználó
                     String hashedPassword;
                     passwd = player.getPassword(); //hashelt
                     hashedPassword = DigestUtils.sha256Hex(examinedPassword);
@@ -37,12 +36,12 @@ public class LoginModell {
                     else return 2; // a jelszó hibás
                 }
             }
-            if(exist==false) return 3; //Nem létezik ilyen felhasználó!
+            if (exist == false) return 3; //Nem létezik ilyen felhasználó!
         }
         return 4; //Túl rövid felhasználónév/jelszó (min. 4 karakter)!
     }
 
-    public Player getPlayer(String uname){
+    public Player getPlayer(String uname) {
         return database.getPlayerByName(uname);
     }
 }

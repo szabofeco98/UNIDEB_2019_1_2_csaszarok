@@ -27,7 +27,6 @@ public class Word {
     @ManyToOne
     private Player player;
 
-    ;
 
     public void setId(long id) {
         this.id = id;

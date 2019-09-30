@@ -24,11 +24,14 @@ public class Player {
 
     private String password;
 
-    @OneToMany(cascade={CascadeType.PERSIST, CascadeType.MERGE},mappedBy = "player")
+    @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, mappedBy = "player")
     @Cascade(value = org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private List<Word> Words;
 
-    public Player(){};
+    public Player() {
+    }
+
+    ;
 
     public List<Word> getWords() {
         return Words;
