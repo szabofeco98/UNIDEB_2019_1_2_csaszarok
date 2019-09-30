@@ -25,20 +25,25 @@ A program segítségével kényelmessé és elvezhetővé tehetjük a szavak,kif
 rendkívül könnyen elérhető módon és megszerzett tudást nagy valószínűséggel kamatoztatni is tudjuk.
 <br>
 Author:[Szabó Ferenc](https://github.com/szabofeco98)
+
 ## 2. A rendszer céljai és nem céljai
 * Célok
-  * Célunk ezzel a programmal a tanulás elősegítése, akár minden korosztály számára.
-  * A programunk adatbázist fog használni, itt tároljuk a bejelentkezett felhasználók szavait.
-  * A felhasználók regisztrálhatnak, de nem tesszük kötelezővé. Ezáltal regisztráció nélkül is használható remek kis
-    programunk, így aki csak ki akarja próbálni, könnyedén megteheti. A regisztrálatlan felhasználók adatai (szavai) nem
-    lesznek tárolva az adatbázisban.
-  * A fenti sorok között már említettem, hogy minden korosztály számára szeretnénk elérhetővé tenni, ezt úgy akarjuk
-    elérni, hogy nagyon egyszerűen kezelhető, átlátható felhasználói felületet hozunk létre, hogy akár egy idősebb
-    felhasználó is könnyedén el tudjon igazodni rajta - pl. reklámmentesség, kevés gomb, világos felhasználói felület stb.
+  * Célunk ezzel a programmal a különböző nyelvek tanulásának elősegítése, minden korosztály számára.
+  * Minden felhasználónknak lehetősége van a regisztrációra, enélkül a szótár-programunk funkciói nem
+    vehetőek igénybe.
+  * A programunk adatbázist használ. A regisztrációt követően itt lesznek eltárolva a már regisztrált 
+    felhasználók szavai. A későbbiekben a felhasználó ehhez a listához elemeket tud hozzáadni, eltávolítani,
+    és olvasni a listát.
+  * A fenti sorok között már említettem, hogy minden korosztály számára szeretnénk elérhetővé tenni az alkalmazásunkat. 
+    Ezt úgy szeretnénk kivitelezni, hogy nagyon egyszerűen kezelhető, akárki számára átlátható felhasználói felületet 
+    hozunk létre, hogy akár egy idősebb felhasználó is könnyedén el tudjon igazodni rajta - pl. kevés gomb, világos 
+    felhasználói felület stb.
 
-* Nem célok:
-  * Mivel egy kicsi és egyszerű programot szeretnénk kiadni a kezünkből, ezért nem szeretnénk túlbonyolítani képek,
-    animációk használatával, célunk az egyszerű, de nagyszerű program elkészítése, mely bárki által könnyen használható.
+* Nem célok: 
+  * Mivel egy kicsi és egyszerű programot szeretnénk kiadni a kezünkből, ezért nem szeretnénk túlbonyolítani, komplikáltabbá 
+    tenni egyéb grafikus elemek hozzáadásával, mint pl.: képek, animációk használata. Célunk egy egyszerű, de nagyszerű program 
+    elkészítése, mely bárki által könnyendén kezelhető, és használható.
+  * A felhasználók terhelése akármekkora mennyiségű reklámanyaggal.
     
 Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)  
 ## 3. Vágyálom rendszer
@@ -58,7 +63,20 @@ Author: [Petrik Dávid](https://github.com/PDavidson123)
 
 
 ## 4. Jelenlegi üzleti folyamatok
+A mai világban nagyon fontos szerepe van különböző idegen nyelvek elsajátításának. Ezért a nyelvtanulás 
+nagyon fontos is.  
+Az idegen nyelvek oktatása már általános iskolában elkezdődik, és a felsőoktatás elkezdéséig biztosan 
+tanulnunk kell ezeket. A felsőoktatásban minimális mértékben sem kötelezik (a tanulás lehetőségét 
+természetesen biztosítsák), viszont a felvételikhez már elvárás. Mindemellett lehetőség van magán 
+oktatók megkeresésére, ha gyarapítani szeretnénk a tudásunkat.
+Az idősebb korosztály számára is vannak nyelvtanulási lehetőségek, jobb esetben a munkahelyük segít ebben,
+továbbképzések formájában, roszabb esetben viszont tanfolyamon kell megtanulniuk más nyelveket. Ezeken a 
+tanfolyamokon a nyelvtan nagyobb szerepet kap, a szókincs fejlesztése elmarad ehhez képest.
+Miközben a nyelv szókincsét tanuljuk, a szavakat papírra írjuk, amiket elveszíthetünk, vagy esetleg 
+megfeledkezünk arról, hogy hol tároltuk. Ezért hoztuk létra a Szótár alkalmazásunkat, amiben online tudjuk 
+tárolni a számunkra fontos, releváns szókincset, és idővel frissíteni, esetlegesen szelektálni ennek elemeit.
 
+Author:[Szabó Alexandra_Ilona](https://github.com/Wrigozo)
 
 ## 5. Igényelt üzleti feladatok
 Milyen folyamatokat kell megvalósítson a rendszer?
